@@ -61,13 +61,17 @@ body{
 }
 
  /* about */
+ #aboutme{
+  height: 50vh;
+ }
  .card5{
     display: flex;
     align-items: center;
     margin: auto;
     gap: 10px;
     background-color: #161F32; 
-     width: 60%; height: 40vh; 
+     width: 60%; 
+     height: 40vh; 
      margin-top:0;
  }
 .aboutimg{
@@ -111,9 +115,30 @@ body{
 
   /* Services */
 .main3{
-  height: 100vh; 
-  color: rgb(19, 100, 172);
+  height: 90vh; 
+  color: cyan;
+  
 }
+.main3 .cardmain .card img{
+  width: 150px;
+  margin: auto;
+}
+.main3 .cardmain .shadow{
+  width: 17rem;
+  margin: auto;
+  background-color: #161F32;
+ 
+}
+.main3 .container .cardmain{
+justify-content: center ;
+
+}
+.main3 .container .cardmain .card-shadow{
+  box-shadow: -13px 14px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -13px 14px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -13px 14px 5px 0px rgba(0,0,0,0.75);
+  
+  }
 
 
 
@@ -172,6 +197,7 @@ body{
   margin-top: 60%;
   transform: translate(-50%);
   display: flex;
+  
 }
 .thumb li{
   list-style: none;
@@ -180,6 +206,9 @@ body{
   margin: 0 20px;
   cursor: pointer;
   transition: 0.5s;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 .thumb li:hover{
   transform: translateY(-15px);
@@ -187,6 +216,31 @@ body{
 .thumb li img{
   max-width: 60px;
 }
+
+
+/* <!-- other information --> */
+.main4 {
+  color: rgb(19, 100, 172);
+  
+}
+.main4 .container{
+  height: 100vh;
+  
+}
+.cardshow .card img{
+  width: 150px;
+}
+
+.main4 .cardshow h2{
+  justify-content: center; 
+  text-align: center;
+  margin-top: -55px; 
+  margin-left: 3em; 
+  font-weight: 700;
+}
+
+
+/* <!-- other information end --> */
 
 /* section2 */
 /* #main2{
@@ -288,9 +342,66 @@ body{
  margin-top: 10%;
 } */
 
+.main5{
+  height: 100vh;
+}
+  
+
+/* Contact Form */
 
 
-
+.form-area {
+	padding-top: 7%;
+}
+.row.single-form {
+	box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+}
+.left {
+	background: blueviolet;
+	padding: 200px 100px;
+}
+.left h2 {
+	font-family: poppins;
+	color: #fff;
+	font-weight: 700;
+	font-size: 48px;
+}
+.left h2 span {
+	font-weight: 100;
+}
+.single-form{
+    background: #fff;
+}
+.right {
+	padding: 70px 100px;
+	position: relative;
+}
+.right i {
+	position: absolute;
+	font-size: 80px;
+	left: -27px;
+	top: 40%;
+	color: #fff;
+}
+.form-control {
+	border: 2px solid #000;
+}
+.right button {
+	border: none;
+	border-radius: 0;
+	background: #252525;
+	width: 180px;
+	color: #fff;
+	padding: 15px 0;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.right button:hover{
+    background-color: #252525;
+}
+  /* Contact Form End */
 
 /* ------------------------------------------------Media Query-------------------------------------- */
 
@@ -428,4 +539,29 @@ body{
       
       
     }
+
+    /* Contact Form */
+  }
+
+  @media (max-width:767px){
+      .left {
+    padding: 90px 15px;
+    text-align: center;
+  }
+  .left h2 {
+    font-size: 25px;
+  }
+  .right {
+    padding: 25px;
+  }
+  .right i {
+    top: -52px;
+    transform: rotate(90deg);
+    left: 46%;
+  }
+      .right button {
+    width: 150px;
+    padding: 12px 0;
+  }
+
 }
