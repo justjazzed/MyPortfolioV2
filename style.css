@@ -224,8 +224,8 @@ justify-content: center ;
   
 }
 .main4 .container{
-  height: 100vh;
-  
+  height: 180vh;
+  background-color: antiquewhite;
 }
 .cardshow .card img{
   width: 150px;
@@ -341,36 +341,59 @@ justify-content: center ;
 .cardmain{
  margin-top: 10%;
 } */
-
-.main5{
-  height: 100vh;
-}
+.juicy-roadmap_new{
+  width: 100%;
   
+  background-image:url(images/aesthtic.png);
+  background-position: center;
+  background-size: cover;
+}
+.map_box{
+  background-color: #161F32;
+  padding: 12px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+
 
 /* Contact Form */
 
-
+#Contact-form{
+  height: 100vh;
+  background-image: url(images/WebBGnew-01.png);
+  background-position: center;
+  background-size: cover;
+}
+.form-label{
+  color: aliceblue;
+}
 .form-area {
 	padding-top: 7%;
 }
 .row.single-form {
-	box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+	box-shadow: 10px 9px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 9px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 9px 5px 0px rgba(0,0,0,0.75);
 }
 .left {
-	background: blueviolet;
-	padding: 200px 100px;
+	background: #161F32;
+	padding: 210px 125px;
+  
 }
 .left h2 {
 	font-family: poppins;
 	color: #fff;
 	font-weight: 700;
 	font-size: 48px;
+  font-family: "Mukta", sans-serif;
 }
 .left h2 span {
 	font-weight: 100;
+  
 }
 .single-form{
-    background: #fff;
+    background: transparent;
 }
 .right {
 	padding: 70px 100px;
@@ -381,37 +404,75 @@ justify-content: center ;
 	font-size: 80px;
 	left: -27px;
 	top: 40%;
-	color: #fff;
+	color: #ffffff00;
 }
 .form-control {
-	border: 2px solid #000;
+	border: 1px solid #ffffff;
+  background-color: transparent;
 }
 .right button {
-	border: none;
-	border-radius: 0;
-	background: #252525;
-	width: 180px;
+	border: 1px solid white;
+	border-radius: 10px;
+	background: transparent;
+	width: 150px;
 	color: #fff;
 	padding: 15px 0;
 	display: inline-block;
-	font-size: 16px;
+	font-size: 20px;
 	margin-top: 20px;
 	cursor: pointer;
 }
 .right button:hover{
-    background-color: #252525;
+    transition: 0.5s ease;
+    background-color: #00f7ff;
 }
+
+.social-links{
+  display: flex;
+  gap: 20px;
+  
+  justify-content: center;
+
+}
+.social-links i{
+  color: #00f7ff;
+}
+
+.contacts{
+  color: #ffffff;
+}
+
+/* .fa-caret-left{
+  margin-left: -0.3%;
+  
+} */
   /* Contact Form End */
 
+
+
+
+
+
+
+  /***********************************footer******************************** */
+  
+footer {
+  height: 10vh;
+  width: 100%;
+  padding: 3% 0;
+  text-align: center;
+  background-color: #1e2a46;
+  font-weight: 300;
+  color: aliceblue;
+}
 /* ------------------------------------------------Media Query-------------------------------------- */
 
 
 @media only screen and (max-width: 600px) {
  
-  .profile img{
-    width: 100px;
-    border-radius: 50%;
-  }
+ body{
+  width: auto;
+ }
   /* .intro{
     margin-top: 10%;
   } */
@@ -423,11 +484,13 @@ justify-content: center ;
     align-items: center;
     justify-content: center;
     background-color: #017143;
+   
   }
   .img_home{
     width: 100px;
     border-radius: 50%;
     margin-left: 15%;
+    display: none;
   }
   .main h1{
     margin-top: 40px;
@@ -492,12 +555,14 @@ justify-content: center ;
 
      /* Services */
     .main3{
+      margin-top: -25%;
       width: auto;
     }
     .cardmain{
       width: 100%;
-      gap: 10px;
+      gap: 5px;
       margin: auto;
+      margin-top: -10%;
     }
     .cardmain .shadow{
       width: 100%;
@@ -512,11 +577,15 @@ justify-content: center ;
       margin-right: auto;
 
     }
+    .background-block{
+      display: none;
+    }
     /* Services end */
 
     /* carousel */
+    
     #Portfolio{
-      margin-top: 100%;
+      margin-top: 300%;
       width: 100%;
     }
 
@@ -536,20 +605,106 @@ justify-content: center ;
       justify-content: flex-end;
       margin-left: 50px;
       background: url(images/FGC1.png);
-      
-      
     }
-
-    /* Contact Form */
+    .content{
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+  .imgBoxslider img{
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 50px;
+    
+    
   }
+  .texboxslider{
+    position: relative;
+    max-width: 600px;
+  }
+  .texboxslider h2{
+    color: #333;
+    font-size: 3em;
+    line-height: 1.4em;
+    font-weight: 500;
+  }
+  .texboxslider h2 span{
+    color: #017143;
+    font-size: 1.2em;
+    font-weight: 900;
+  }
+  
+  .thumb{
+    position: absolute;
+    left: 50%;
+  
+    margin-top: 60%;
+    transform: translate(-50%);
+    display: flex;
+    
+  }
+  .thumb li{
+    list-style: none;
+    display: inline-block;
+   
+    margin: 0 20px;
+    cursor: pointer;
+   
+  }
+  .thumb li:hover{
+    transform: translateY(-15px);
+  }
+  .thumb li img{
+    max-width: 60px;
+  }
+  
 
+    /* .main4{
+        display: block;
+      width: 50%;
+      font-size: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+      .theme-text{
+        display: none;
+      }
+      
+      .main4 .card h2{
+        display: none;
+      }
+      .main4 .card p{
+       display: block;
+       font-size: 15px;
+      }
+      .main4 .card{
+        width: 2rem;
+      } */
+    /* Contact Form */
+    .map_box{
+      background-color: #161F32;
+      padding: 11px;
+      border-radius: 20px;
+      margin: auto;
+      margin-top: 5%;
+      font-size: 12px;
+    }
+    .map_box ul li{
+      list-style: none;
+      text-align: center;
+    }
+    }
   @media (max-width:767px){
       .left {
     padding: 90px 15px;
     text-align: center;
   }
   .left h2 {
-    font-size: 25px;
+    font-size: 40px;
   }
   .right {
     padding: 25px;
@@ -563,5 +718,9 @@ justify-content: center ;
     width: 150px;
     padding: 12px 0;
   }
-
+  .social-links{
+    display: flex;
+    gap: 15px;
+  }
+  
 }
