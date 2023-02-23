@@ -13,8 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Mukta&display=swap" rel="stylesheet">
   </head>
   <body >
-    
-    <nav class="navbar navbar-expand-lg" style="background-color: #2A3A5E; position: fixed; width: 100%; z-index: 1;">
+     <!-- Desktop version navbar -->
+    <nav class="navbar navbar-expand-lg nav-desktop" style="background-color: #2A3A5E; position: fixed; width: 100%; z-index: 1;">
         <div class="container ">
           <a class="navbar-brand " href="#"><img src="images/onfire.png" style="width: 90px;"></a>
           <div class="collapse navbar-collapse " id="navbarSupportedContent" >
@@ -34,28 +34,47 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#Contact-form">Contact</a>
               </li>
-              
-            <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li> 
-             
-            </ul> -->
-            <!-- <form class="d-flex" role="search">
-              <input class="form-control me-10" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
+         
           </div>
         
         </div>
       </nav>
+        <!-- mobile version navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary mobile-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="display: block;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contacts</a>
+              </li>
+              
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+
       <section class="main">
         <div class="container py-5"  >
           <div class="row py-5 gap-5 intro">
@@ -89,37 +108,15 @@
           </div>
     </div>
       </section>
-<!--       
-     
-      <Section class="main_section2" id="main2">
-        <div class="container-fluid bgc" style="height:100vh; background-color: #1D283A;">
-            <div class="row py-1 ms-5">
-                <div class="col-lg-7  ms-5">
-                  <h1 class="display-1" >Let me</h1>
-                  <h2 class="display-1 ">Introduce</h2>
-                </div >
-                <div class="banner col-md-6 col-12 " >
-                <img src="images/banner2.png" alt="Pray" class="img1" />
-                <img src="images/banner3.png" alt="Pray" class="img2" />
-              </div>
-              <div class="panel1 col-lg-6"  >
-                <div class="panel text-left">
-                  <h1 class="ms-5 mt-5 display-1 text-center name1" >Jasbar Legaspina</h1>
-                  <p class="col-lg-6 mt-5 para" >
-                    I'm a Graphic Designer from in Agan Ligaya General Santos City. I have over almost 2 years of freelancing experience in the various fields of graphic design.
-                  </p>
-                 
-                </div>
-            </div>
-        </div>
-      </Section> -->
+
+  
        <section class="main3"  id="service1">
         <div class="container">
           <h1 class="text-center mt-5 display-3 fw-bold" style="color: rgb(19, 100, 172);">Our Services</h1>
           <hr class="mx-auto mb-5 w-25">
           <div class="row cardmain ">
 
-              <div class="col-12 col-sm-6 col-md-3 m-5 card-shadow">
+              <div class="col-12 col-sm-2 col-md-3 m-5 card-shadow">
                  
                   <div class="card shadow">
                       <img src="images/front-end.png" alt="" class="card-img-top">
@@ -135,7 +132,7 @@
                  
               </div>
             
-              <div class="col-12 col-sm-6 col-md-3 m-5 card-shadow">
+              <div class="col-12 col-sm-2 col-md-3 m-5 card-shadow">
                  
                   <div class="card shadow">
                       <img src="images/graphic-design.png" alt="" class="card-img-top">
@@ -152,12 +149,12 @@
                  
               </div>
              
-              <div class="col-12 col-sm-6 col-md-3 m-5 card-shadow">
+              <div class="col-12 col-sm-2 col-md-3 m-5 card-shadow">
                 
                   <div class="card shadow">
                       <img src="images/drawing-tablet.png" alt="" class="card-img-top">
                       <div class="card-body">
-                          <h3 class="text-center" style="font-size: 27px;">Illustration Design</h3>
+                          <h3 class="text-center" >Illustration Design</h3>
                           <hr class="mx-auto w-75">
                           <p>
                             An illustration is a decoration, interpretation or visual explanation of a text, concept or process, designed for integration in print and digital published media, such as posters, flyers, 
@@ -177,9 +174,11 @@
       <!-- Carousel Content start-->
 
 
-      <section class="container"  id="Portfolio">
-        <h1 class="text-center mt-5 display-3 fw-bold">My <span class="theme-text">Portfolio</span></h1>
-          <hr class="mx-auto mb-5 w-25">
+      <section class="main5">
+        <div class="container-fluid"  id="Portfolio">
+        <div class="row">
+        <h1 class="text-center mt-5 display-3 fw-bold" style="color: aqua;">My <span class="theme-text">Portfolio</span></h1>
+          <hr class="mx-auto mb-5 w-25" style="color: aqua;">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -242,78 +241,25 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+      </div>
+      </div>
+      </section>
+      
+      <section class="carousel-mobile">
+        
+        <div class="container">
+          <h1 class="text-center mt-5 display-3 fw-bold" style="color: rgb(19, 100, 172);">My Works</h1>
+          <div class="row">
+            <div class="col-sm-12 mt-5 images-mobile">
+              <img src="images/UIdESIGN1-01.png" alt="">
+              <img src="images/UIdESIGN1-2-01.png" alt="">
+              <img src="images/UIdESIGN1-3.png" alt="">
+            </div>
+          </div>
+        </div>
       </section>
 
-
-         <!-- UI/UX Design Content end -->
-
-          <!-- other information -->
-
-            <!-- <section class="main4" >
-              <div class="container" >
-                <h1 class="text-center mt-5 display-3 fw-bold">Software <span class="theme-text">Tool</span></h1>
-                <hr class="mx-auto mb-5 w-25">
-              <div class="row  cardshow">
-
-                <div class="col-5 m-5">
-                  <h4 class="theme-text " style="margin-left: 22em; position: absolute; background-color: aliceblue; width: 30px;height: 30px; text-align: center; align-items: center; border-radius: 50%;">1</h4>
-                  <div class="card " style="width: 25rem;">
-                  
-                    <img src="images/Illustrator-Logo.png" class="card-img-top mt-2" alt="...">
-                    <h2>Adobe Illustrator</h2>
-                    <div class="card-body">
-                      <h5 class="card-title">Adobe Illustrator</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  
-                  </div>
-                 
-                </div>
-                
-                <div class="col-lg-5 ms-auto ">
-                  <h4 class="theme-text " style="margin-left: -4.5em; position: absolute; background-color: aliceblue; width: 30px;height: 30px; text-align: center; align-items: center; border-radius: 50%;">2</h4>
-                  <div class="card ms-3 " style="width: 25rem;">
-                    <img src="images/photoshop.png" class="card-img-top  m-2" alt="..." style="width: 115px;">
-                    <h2>Adobe Photoshop</h2>
-                    <div class="card-body">
-                      <h5 class="card-title">Adobe Photoshop</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">See Info</a>
-                    </div>
-                  </div>
-                  
-                </div>
-                <div class="col-lg-7 m-5">
-                  <h4 class="theme-text " style="margin-left: 22em; position: absolute; background-color: aliceblue; width: 30px;height: 30px; text-align: center; align-items: center; border-radius: 50%;">3</h4>
-                  <div class="card cardimg3" style="width: 25rem;">
-                    <img src="images/Figma-1-logo.png" class="card-img-top mt-2" alt="...">
-                    <h2 style="font-size: 70px; margin-top: -20%; margin-right: 10%;">Figma</h2>
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">See Info</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-5 ms-auto">
-                  <div class="card ms-3 " style="width: 25rem;">
-                    <h4 class="theme-text " style="margin-left: -5em; position: absolute; background-color: aliceblue; width: 30px;height: 30px; text-align: center; align-items: center; border-radius: 50%;">4</h4>
-                    <img src="images/Illustrator-Logo.png" class="card-img-top mt-2" alt="...">
-                    <h2>Adobe Illustrator</h2>
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">See Info</a>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              </div>
-              
-            </section> -->
-
+     
 
 
 
@@ -327,8 +273,8 @@
 
                     <div class="col-lg-12">
 
-                        <h2>Sofware Tools</h2>
-
+                      <h1 class="text-center mt-5 display-3 fw-bold" style="color:#161F32">My <span class="theme-text">Tools</span></h1>
+                      <hr class="mx-auto mb-5 w-25" style="color:#161F32;height: 10px;">
                     </div>
 
                 </div>
@@ -459,71 +405,7 @@
                 </div>
 
 
-                 <!--row right-->
-                <div class="row row_right">
-
-                    <div class="col-lg-6 col-md-6 col-sm-12"></div>
-
-                    <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up">
-
-                        <div class="map_box">
-
-                            <h4>January 2022</span></h4>
-
-                            <ul>
-
-                                <li><i class="fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-
-                                <li><i class="fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-
-
-
-                            </ul>
-
-                        </div>
-
-                    </div>
-
-
-
-                </div>
-
-
-
-                <!--row left-->
-
-                <div class="row row_left">
-
-                    <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up">
-
-                        <div class="map_box">
-
-                            <h4>February 2022 </h4>
-
-                            <ul>
-
-                                <li><i class="fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-
-                                <li><i class="fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-
-                                <li><i class="fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-
-                                <li><i class="fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-
-
-
-                            </ul>
-
-                        </div>
-
-                    </div>                 
-
-                    <div class="col-lg-6 col-md-6 col-sm-12"></div>
-
-
-
-                </div>
-
+                
 
         </section>
 

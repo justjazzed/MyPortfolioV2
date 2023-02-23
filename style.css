@@ -16,6 +16,9 @@ body{
 .intro{
   margin-top: 10%;
 }
+.mobile-nav{
+  display: none;
+}
 .main{
   height: 100vh;
   margin-top: auto;
@@ -86,7 +89,9 @@ body{
 }
 
 /* carousel */
-
+.carousel-mobile{
+  display: none;
+}
 .carousel-item{
   min-height: 100vh;
   min-height: 300px;
@@ -115,7 +120,8 @@ body{
 
   /* Services */
 .main3{
-  height: 90vh; 
+  width: 100%;
+ 
   color: cyan;
   
 }
@@ -133,31 +139,30 @@ body{
 justify-content: center ;
 
 }
-.main3 .container .cardmain .card-shadow{
-  box-shadow: -13px 14px 5px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: -13px 14px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: -13px 14px 5px 0px rgba(0,0,0,0.75);
-  
-  }
+
 
 
 
   /* slider for ui deisgn */
-#UIContent{
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  padding: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
- 
-}
-#Portfolio{
-  height: 100vh; 
-  color: rgb(19, 100, 172);
-}
 
+
+
+.carousel-item{
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat scroll center scroll;
+  -webkit-background-size:cover ;
+  background-size: cover;
+}
+  .carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    bottom: 0%;
+    right: 0%;
+  }
   .content{
     position: relative;
     width: 100%;
@@ -174,6 +179,12 @@ justify-content: center ;
   
   
 }
+.carousel-caption{
+  bottom: 180px;
+  margin-left: -5.5%;
+}
+
+ /* Carousel for UX/UI Design */
 .texboxslider{
   position: relative;
   max-width: 600px;
@@ -206,9 +217,7 @@ justify-content: center ;
   margin: 0 20px;
   cursor: pointer;
   transition: 0.5s;
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  
 }
 .thumb li:hover{
   transform: translateY(-15px);
@@ -216,7 +225,7 @@ justify-content: center ;
 .thumb li img{
   max-width: 60px;
 }
-
+ /* Carousel for UX/UI Design */
 
 /* <!-- other information --> */
 .main4 {
@@ -240,113 +249,15 @@ justify-content: center ;
 }
 
 
-/* <!-- other information end --> */
 
-/* section2 */
-/* #main2{
- margin-top: 3%;
-}
-.main_section2 .col-lg-7 h1{
-  margin-top: 120px;
-  font-weight: 700;
-  font-size: 120px;
-  color: #716455;
-  margin-left: 100px;
-}
-.main_section2 .col-lg-7 h2{
-  font-family: Lucida Bright, Georgia, serif;
-  font-style: italic;
-  font-weight: 700;
-  font-size: 100px;
-  margin-left: 35%;
-  color: #716455;
-}
-.banner .img1 {
-  position: relative;
-  width: 773px;
-  left: 100px;
-  box-shadow: 10px 10px 4px -3px rgba(0,0,0,0.84);
-  -webkit-box-shadow: 10px 10px 4px -3px rgba(0,0,0,0.84);
-  -moz-box-shadow: 10px 10px 4px -3px rgba(0,0,0,0.84);
-}
-.banner .img2 {
-  position: relative;
-  width: 773px;
-  left: 293px;
-  top: -20%;
-  box-shadow: 10px 10px 4px -3px rgba(0,0,0,0.84);
-  -webkit-box-shadow: 10px 10px 4px -3px rgba(0,0,0,0.84);
-  -moz-box-shadow: 10px 10px 4px -3px rgba(0,0,0,0.84);
-}
-.panel .para{
-  margin-left: 35%;
-  font-size: 30px;
-  line-height: 3rem;
-  font-family: Lucida Bright, Georgia, serif;
-}
-.panel .name1{
-  font-weight: 400;
-  font-size: 80px; 
-}
-
-.panel1{
-  margin-top: -10%;
-  color: #716455;
-} */
-/* .card{
-  margin-top: -27%;
-
-}
-.maincard{
- margin-left: 70%;
-}
-
-
-.theme-text {
-  color: #474af0;
-}
-
-.card-img-top {
-  height: 200px;
-  width: 100%;
-}
-.card {
-  z-index: 1;
-  overflow: hidden;
-  transition: 0.5s;
-  
-}
-.card:hover {
-  color: white;
-}
-.card::before {
-  content: "";
-  position: absolute;
-  left: -100%;
-  top: 0%;
-  background: #474af0;
-  width: 100%;
-  height: 100%;
-  transition: 0.5s;
-  z-index: -1;
-}
-.card:hover::before {
-  left: 0%;
-  color: white;
-}
-
-.main3{
-  margin-top: 10%;
-}
-.cardmain{
- margin-top: 10%;
-} */
 .juicy-roadmap_new{
   width: 100%;
-  
   background-image:url(images/aesthtic.png);
   background-position: center;
   background-size: cover;
+}
+.headding{
+  text-align: center;
 }
 .map_box{
   background-color: #161F32;
@@ -467,7 +378,7 @@ footer {
 /* ------------------------------------------------Media Query-------------------------------------- */
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1100px) {
  
  body{
   width: auto;
@@ -475,6 +386,13 @@ footer {
   /* .intro{
     margin-top: 10%;
   } */
+
+  .nav-desktop{
+    display: none;
+  }
+  .mobile-nav{
+    display: block;
+  }
   .main{
     height: 100vh;
     width: auto;
@@ -554,113 +472,73 @@ footer {
 
      /* Services */
     .main3{
-      margin-top: -25%;
-      width: auto;
-    }
-    .cardmain{
+      margin-top: -50%;
       width: 100%;
-      gap: 5px;
-      margin: auto;
+      background-image: url(images/WebBGnew-01.png);
+      background-position: center;
+      background-size: cover;
+    }
+    .cardmain .card-shadow{
+      gap: -10%;
+      }
+  
+    .main3 .cardmain .shadow
+    {
+    
+      margin-top: -20%;
+      padding: 10px;
+      width: 15rem;
+      display: flex;
+      flex-direction: row;
+     
+    }
+    
+    .cardmain .card-shadow .shadow img{
+     
+      width: 60px; 
+    }
+    .cardmain .card-shadow .shadow p{
       margin-top: -10%;
+      width: 180px;
+      height: 11vh;
+      padding: 10px;
+     font-size: 10px; 
+     font-weight: 400;
+    
     }
-    .cardmain .shadow{
-      width: 100%;
+    .cardmain .card-shadow .shadow h3{
+      
+     font-weight: 400;
+     font-size: 20px; 
     }
-    .cardmain .shadow p{
-      font-size: 15px;
-      font-weight: 400;
-    }
-    .card-img-top{
-      width: 100px;
-      margin-left: auto;
-      margin-right: auto;
-
-    }
+    
+    
     .background-block{
       display: none;
     }
+   
     /* Services end */
 
     /* carousel */
     
     #Portfolio{
-      margin-top: 300%;
+      display: none;
+      
+    }
+    .carousel-mobile {
+      width: 100%;
+      display: block;
+    }
+    .images-mobile{
+      margin: auto;
+     
+    }
+    .images-mobile img {
+      
       width: 100%;
     }
 
-    #UIContent{
-      position: relative;
-      width: 100%;
-      min-height: 100vh;
-      padding: 100px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-     
-    }
-    .imgBoxslider img{
-      width: 100px;
-      display: flex;
-      justify-content: flex-end;
-      margin-left: 50px;
-      background: url(images/FGC1.png);
-    }
-    .content{
-      position: relative;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-  
-  .imgBoxslider img{
-    width: 100px;
-    display: flex;
-    justify-content: flex-end;
-    margin-left: 50px;
     
-    
-  }
-  .texboxslider{
-    position: relative;
-    max-width: 600px;
-  }
-  .texboxslider h2{
-    color: #333;
-    font-size: 3em;
-    line-height: 1.4em;
-    font-weight: 500;
-  }
-  .texboxslider h2 span{
-    color: #017143;
-    font-size: 1.2em;
-    font-weight: 900;
-  }
-  
-  .thumb{
-    position: absolute;
-    left: 50%;
-  
-    margin-top: 60%;
-    transform: translate(-50%);
-    display: flex;
-    
-  }
-  .thumb li{
-    list-style: none;
-    display: inline-block;
-   
-    margin: 0 20px;
-    cursor: pointer;
-   
-  }
-  .thumb li:hover{
-    transform: translateY(-15px);
-  }
-  .thumb li img{
-    max-width: 60px;
-  }
-  
 
     /* .main4{
         display: block;
@@ -696,9 +574,26 @@ footer {
       list-style: none;
       text-align: center;
     }
+    footer {
+      height: 10vh;
+     margin-bottom: 0%;
     }
-  @media (max-width:767px){
-      .left {
+    .juicy-roadmap_new{
+      width: 100%;
+      margin-top: 100%;
+      background-image:url(images/aesthtic.png);
+      background-position: center;
+      background-size: cover;
+    }
+
+    }
+  @media (max-width:767px)
+  {
+    footer{
+      bottom: 0;
+    }
+    
+    .left {
     padding: 90px 15px;
     text-align: center;
   }
