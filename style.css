@@ -166,15 +166,19 @@ justify-content: center ;
   .content{
     position: relative;
     width: 100%;
+    margin-top: 50%;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 50px;
+    
   }
 
 .imgBoxslider img{
-  width: 425px;
+  width: 600px;
   display: flex;
-  justify-content: flex-end;
+  margin-top: 50%;
   margin-left: 50px;
   
   
@@ -189,11 +193,28 @@ justify-content: center ;
   position: relative;
   max-width: 600px;
 }
+.ui-submit {
+	border: 1px solid white;
+	border-radius: 10px;
+	background: transparent;
+	width: 150px;
+	color: #fff;
+	padding: 15px 0;
+	display: inline-block;
+	font-size: 20px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.ui-submit:hover{
+    transition: 0.5s ease;
+    background-color: #00f7ff;
+}
 .texboxslider h2{
-  color: #333;
-  font-size: 3em;
+  color: #00ffd5;
+  font-size: 5em;
   line-height: 1.4em;
   font-weight: 500;
+  margin-top: 50%;
 }
 .texboxslider h2 span{
   color: #017143;
@@ -204,8 +225,7 @@ justify-content: center ;
 .thumb{
   position: absolute;
   left: 50%;
-
-  margin-top: 60%;
+  margin-top: 70%;
   transform: translate(-50%);
   display: flex;
   
@@ -213,7 +233,6 @@ justify-content: center ;
 .thumb li{
   list-style: none;
   display: inline-block;
- 
   margin: 0 20px;
   cursor: pointer;
   transition: 0.5s;
@@ -223,9 +242,16 @@ justify-content: center ;
   transform: translateY(-15px);
 }
 .thumb li img{
-  max-width: 60px;
+  max-width: 70px;
 }
  /* Carousel for UX/UI Design */
+
+
+
+
+
+
+
 
 /* <!-- other information --> */
 .main4 {
@@ -617,4 +643,23 @@ footer {
     gap: 15px;
   }
   
+}
+
+
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+.fade1.reveal{
+  position: relative;
+  transform: translateY(-150px);
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
 }
