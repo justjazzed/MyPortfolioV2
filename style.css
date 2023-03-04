@@ -418,6 +418,9 @@ footer {
   }
   .mobile-nav{
     display: block;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
   }
   .main{
     height: 100vh;
@@ -602,7 +605,7 @@ footer {
     }
     footer {
       height: 10vh;
-     margin-bottom: 0%;
+     margin-top:55%;
     }
     .juicy-roadmap_new{
       width: 100%;

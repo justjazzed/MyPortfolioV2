@@ -4,9 +4,7 @@
     box-sizing: border-box;
     
 }
-body{
-    background-color: #ffd14d;
-}
+
 /* <!--*********************************** Navbar **************************************--> */
 .nav{
     padding:10px ;
@@ -50,8 +48,16 @@ body{
 }
 
     /* <!--*********************************** Hero Section **************************************--> */
+
+.hero{
+    
+    background-image: linear-gradient(to top, #5643f0, #4750f5, #375cf9, #2366fd, #0070ff);
+}
+.logos{
+    padding-left:10% ;
+}
 .main-content h1{
-    color: #393b3b ;
+    color: #ffffff ;
     font-size:200px;
     font-weight: 800;
     cursor: default;
@@ -68,3 +74,52 @@ body{
 }
 
 
+.logos h1{
+    font-size: 100px;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+
+  /* <!--*********************************** logo layout**************************************--> */
+
+  .main-content-2{
+   
+    height: 100dvh;
+    background-image: linear-gradient(to bottom, #5643f0, #4750f5, #375cf9, #2366fd, #0070ff);
+  }
+  .main-content-body{
+    padding-top:5%;
+  }
+  .main-content-2__desc{
+    border: 1px solid rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    gap: 10px;
+    text-align: center;
+  }
+  .main-content-2__desc h4{
+    font-weight: 800;
+  }
+  .main-content-2__desc-1::after{
+    content:" ";
+    height: 100px;
+    width: 2px;
+    background: rgb(255, 255, 255);
+    display: block;
+    position: absolute;
+    top: 118%;
+    left: 33%;
+  }
+  .main-content-2__left img{
+    width: 300px;
+  }
+  .main-content-2__right img{
+    margin-left: 15%;
+  }
+ hr{
+    width: 70%;
+    border: 1px solid rgb(0, 0, 0);
+   margin: auto;
+ }
