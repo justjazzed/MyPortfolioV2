@@ -163,10 +163,21 @@ hr {
 }
 
 /* <!--*********************************** logo layout 2**************************************--> */
+.background-img img{
+  position: absolute;
+  top: 163%;
+  z-index:-5;
+  width: 1450px;
+  display: block;
+  left: -26%;
+ opacity: 40%;
+}
 
 .main-content-3 {
-  background-color: #ffffff;
+  background-color: transparent;
   height: 100dvh;
+  overflow: hidden;
+
 }
 .main-content-3__desc {
   border: 2px solid rgb(0, 0, 0);
@@ -319,6 +330,7 @@ hr {
 
   .main-content-3 {
     height: 140dvh;
+
   }
 
   .main-content-2__right .icon__4 img {
@@ -358,5 +370,8 @@ hr {
     position: absolute;
     top: 244%;
     left: 50.5%;
+  }
+  .background-img img{
+  display: none;
   }
 }
