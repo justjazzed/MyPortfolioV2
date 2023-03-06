@@ -27,7 +27,7 @@ body{
   background:url(images/WebBGnew-01.png);
  
 }
-.img_home{
+.img-home img{
   width: 500px;
   border-radius: 50%;
   margin-left: 10%;
@@ -69,6 +69,7 @@ body{
  }
  .card5{
     display: flex;
+    
     align-items: center;
     margin: auto;
     gap: 10px;
@@ -401,221 +402,162 @@ footer {
   font-weight: 300;
   color: aliceblue;
 }
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+.fade1.reveal{
+  position: relative;
+  transform: translateY(-150px);
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
 /* ------------------------------------------------Media Query-------------------------------------- */
 
 
-@media only screen and (max-width: 1100px) {
- 
- body{
-  width: auto;
- }
-  /* .intro{
-    margin-top: 10%;
-  } */
-
-  .nav-desktop{
-    display: none;
+@media (max-width: 1100px) {
+  body{
+    background-color: #1D283A;
+  }
+  
+  .intro{
+   
   }
   .mobile-nav{
-    display: block;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-  }
-  .main{
-    height: 100vh;
-    width: auto;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #017143;
-   
-  }
-  .img_home{
-    width: 100px;
-    border-radius: 50%;
-    margin-left: 15%;
     display: none;
   }
+  .main .intro{
+    display: flex;
+    margin-top: 10px;
+    text-align: center;
+  }
+ 
+  .main .img-home img{
+   margin: auto;
+  width: 350px;
+  
+  }
+  
   .main h1{
-    margin-top: 40px;
-    font-weight: 700;
-    font-size: 70px;
-    color: #716455;
+  font-size: 50px;
   }
   .main p{
-    font-size: 35px;
-    color: #716455;
-  }
-  .main h5{
-    margin-top: auto;
-    color: #716455;
-  }
-  .navbar-collapse ul{
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      color: #716455;
-  }
-  .navbar-collapse ul li a{
-    font-size: 25px;
-    color: #716455;
-    text-decoration: none;
-  }
-  
-  .primary-btn {
-    border-radius: 30px;
-    font-weight: bold;
-    background-color: #716455;
+    font-size: 30px;
   }
 
-   /* About me */
 
-
-  .card5{
-      width: 100%;
-      height: 20vh;
-    }
-    .aboutme{
-      margin: auto;
-      width: 100%;
-      height: 20vh;
-    }
-    .card5 img{
-      width: 100px;
-      margin-left: -50px;
-      border-radius: 50%;
-    }
-    .card5 p{
-      width: 100rem; 
-      color: #ffffff;
-      font-size: 11px; 
-      margin-left: auto;
-      font-weight: 400;
-      align-items: center;
-      margin-top: auto;
-      margin-bottom: auto;
-    }
-     /* about me end */
-
-     /* Services */
-    .main3{
-      margin-top: -50%;
-      width: 100%;
-      background-image: url(images/WebBGnew-01.png);
-      background-position: center;
-      background-size: cover;
-    }
-    .cardmain .card-shadow{
-      gap: -10%;
-      }
-  
-    .main3 .cardmain .shadow
-    {
-    
-      margin-top: -20%;
-      padding: 10px;
-      width: 15rem;
-      display: flex;
-      flex-direction: row;
-     
-    }
-    
-    .cardmain .card-shadow .shadow img{
-     
-      width: 60px; 
-    }
-    .cardmain .card-shadow .shadow p{
-      margin-top: -10%;
-      width: 180px;
-      height: 11vh;
-      padding: 10px;
-     font-size: 10px; 
-     font-weight: 400;
-    
-    }
-    .cardmain .card-shadow .shadow h3{
-      
-     font-weight: 400;
-     font-size: 20px; 
-    }
-    
-    
-    .background-block{
-      display: none;
-    }
    
-    /* Services end */
+}
+@media (max-width: 991px) {
+  body{
+    background-color: #1D283A;
+  }
+  
+  .intro{
+   
+  }
+  
+  .main .intro{
+    display: flex;
+    margin-top: 10px;
+    text-align: center;
+  }
+ 
+  .main .img-home img{
+   margin: auto;
+  width: 350px;
+  
+  }
+ 
+  .main h1{
+  font-size: 60px;
+  }
+  .main p{
+    font-size: 40px;
+  }
 
-    /* carousel */
-    
-    #Portfolio{
-      display: none;
-      
-    }
-    .carousel-mobile {
-      width: 100%;
-      display: block;
-    }
-    .images-mobile{
+
+   
+}
+
+
+   @media(max-width:767px)
+   {
+ 
+  .main .intro{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+    .main .img-home img{
       margin: auto;
+      width: 250px;
+      
+     }
+   
+     .main h1{
+      font-size: 70px;
+      }
+      .main p{
+        font-size: 40px;
+      }
+    
+
+   }
+
+   @media(max-width:575px)
+   {
+   
+  .main .intro{
+    align-items: center;
+    display: flex;
+   
+    justify-content: center;
+  }
+    .main .img-home img{
+      margin: auto;
+      width: 250px;
      
+     }
+     .main .img-home{
+      width: auto;
     }
-    .images-mobile img {
-      
-      width: 100%;
+     .main .img-home1{
+   
+      width: auto;
+   }
+  }
+  @media(max-width:375px)
+  {
+  .main{
+    padding-top: 20em;
+  }
+ .main .intro{
+   align-items: center;
+   display: flex;
+   justify-content: center;
+ }
+   .main .img-home img{
+     width: 250px;
     }
+    .main .img-home{
+      width: auto;
+    }
+    .main .img-home1{
+  
+     width: auto;
+  }
+ }
 
-    
 
-    /* .main4{
-        display: block;
-      width: 50%;
-      font-size: 20px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-      .theme-text{
-        display: none;
-      }
-      
-      .main4 .card h2{
-        display: none;
-      }
-      .main4 .card p{
-       display: block;
-       font-size: 15px;
-      }
-      .main4 .card{
-        width: 2rem;
-      } */
-    /* Contact Form */
-    .map_box{
-      background-color: #161F32;
-      padding: 11px;
-      border-radius: 20px;
-      margin: auto;
-      margin-top: 5%;
-      font-size: 12px;
-    }
-    .map_box ul li{
-      list-style: none;
-      text-align: center;
-    }
-    footer {
-      height: 10vh;
-     margin-top:55%;
-    }
-    .juicy-roadmap_new{
-      width: 100%;
-      margin-top: 100%;
-      background-image:url(images/aesthtic.png);
-      background-position: center;
-      background-size: cover;
-    }
 
-    }
   @media (max-width:767px)
   {
     footer{
@@ -645,24 +587,5 @@ footer {
     display: flex;
     gap: 15px;
   }
-  
-}
 
-
-
-.reveal{
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: all 1.5s ease;
-}
-.fade1.reveal{
-  position: relative;
-  transform: translateY(-150px);
-  opacity: 0;
-  transition: all 1.5s ease;
-}
-.reveal.active{
-  transform: translateY(0px);
-  opacity: 1;
 }
