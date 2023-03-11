@@ -101,15 +101,17 @@ ul li {
 
 
 /* ************************************about********************************* */
+
 .About-Section__1{
   padding-top: 10%;
-  height: 100%;
-
+ 
 }
 .About-Section{
   height: 100%;
   background-color: #161f32;
   align-items: center;
+  border-radius: 10px;
+  padding: 20px;
 }
 .About-Section__Content{
 
@@ -119,7 +121,7 @@ ul li {
   gap: 50px;
 }
 .About-Section__Content img {
-  width: 20%;
+  width: 40%;
 }
 .About-Section__Content p{
   color: #fff;
