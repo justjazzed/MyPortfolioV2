@@ -200,14 +200,11 @@ body{
 
 /* <!-- ******************************** NFTs******************************* --> */
 .main5{
-    width: 100%;
-    height: 100vh;
     margin-top: 5%;
-    
+
 }
 
 .nft{
-    margin-left: 1%;
     display: flex;
     flex-direction: column;
 }
@@ -216,17 +213,17 @@ body{
 }
 
 .item5-content{
-
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding-left: 20rem;
+    align-items: center;
+    gap: 20px;
+ 
 }
 .description{
     padding: 20px;
     text-align: center;
-    width: 25%;
-    height: 40vh;
+    width: 30%;
     border: 1px solid black;
     background-color: #d65db1;
    
@@ -235,7 +232,7 @@ body{
     font-size: 100px;
 }
 .description p{
-    font-size: 17px;
+    font-size: 1em;
 }
 
 /* <!-- ******************************** Logos******************************* --> */
@@ -668,3 +665,23 @@ body{
             }
 }
 /* ****************************************Destined to Design end**************************************/
+
+/* ****************************************NFTs**************************************/
+@media only screen and (max-width:1090px)and (min-width:300px){
+    .item5-content{
+    display: inline-block;
+    }
+    .description{
+        padding: 20px;
+        text-align: center;
+        width: auto;
+        height:auto;
+        border: 1px solid black;
+    }
+    .nft{
+        padding-left: 2%;
+        display: flex;
+        flex-direction: row;
+    }
+   
+}
