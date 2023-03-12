@@ -3,14 +3,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Mukta', sans-serif;
-   
+    
 }
-
+body{
+    height: 100;
+    min-height: 100dvh;
+}
 
 /******************************* Hero Section ***************************/
 .main1{
-    height: 100vh;
+    height: 100%;
+    min-height: 100%;
     padding-bottom: 100px;
+    overflow: hidden;
 }
 .nav-links{
     width: 100%;
@@ -33,16 +38,17 @@
     color: #231f20;
     
 }
- 
+
+
 .main1-content{
     width: 100%;
-    height: 65vh;
     border: 1px solid black;
     background-color: #d5cabd;
     display: flex;
     padding: 50px;
     justify-content: space-between;
     align-items: center;
+    margin-top: 10%;
 }
 .main1-content .header-img img{
     width: 500px;
@@ -54,7 +60,7 @@
 }
 .main1-content .header-text .social-links {
     display: flex;
-    margin-top: 30%;
+    
 }
 .main1-content .header-text .social-links a{
     margin-left: 1rem;
@@ -66,7 +72,7 @@
     font-size: 25px;
     width: 90%;
     font-weight: 300;
-    margin-top: 5%;
+    
     
 }
 /******************************* Hero Section End ***************************/
@@ -74,64 +80,50 @@
 /******************************* About me ***************************/
 
 .main2{
-    height: 100vh;
-   padding: 100px;
+    height: 100%;
+    min-height: 100%;
+   margin: auto;
    background-color: rgb(255, 255, 255);
-  
+   overflow: hidden;
 }
-.main2 .about-content{
-    display: flex;
-}
-.main2 h1{
-    font-size: 100px;
-    width: 10em;
-}
-.about-image {
-    width: 100%;
-    float: left;
-}
-.about-image img{
-    width: 300px;
-    position: relative;
-    left: 50%;
-    top: 16%;
-    transform: rotate(10deg);
-    transition: 1s ease;
-    box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75);
--webkit-box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75);
-}
-.about-image img:hover{
-    transform: rotate(13deg);
-    transition: 1s ease;
-}
-.about-img1 img{
-    width: 300px;
-    position: relative;
-    top: 30rem;
-    justify-content: end;
-    transform: rotate(-7deg);
-    transition: 1s ease;
-    box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75);
-}
-.about-img1 img:hover{
-    transform: rotate(7deg);
-    transition: 1s ease;
-}
-.main2 .text p{
-    font-size: 32px;
-    width: 13em;
-    margin-left: 12rem;
-    margin-top: 8rem;
+.About-Section{
+    margin: auto;
 }
 
+.About-Section  .about-image-1 img{
+    width: 350px;
+    float: inline-end;
+}
+.About-Section  .about-image-2 img{
+    width: 350px; 
+}
+.about-content-1{
+    width: 100%;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-content-1 h1{
+    font-size: 150px;
+}
+.about-content-2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-content-2 p{
+    font-size: 40px;
+    width: 50%;
+
+}
 /* ******************************** Work Experience *******************************  */
 .main3{
-    margin-top: 5%;
+    margin-top: 10%;
     width: 100%;
-    height: 90vh;
+    height: 90%;
+    
 }
 .main3 h1 span{
     color: #2b2a2a;
@@ -144,7 +136,7 @@
 }
 .works{
     display: flex;
-    margin-top: 10rem;
+    margin-top: 6rem;
 }
 .works .freelance2{
     margin-left: 50px;
@@ -186,10 +178,10 @@
 
 .main4{
     width: 100%;
-    height: 80vh;
+    height: 80%;
     text-align: center;
     border: 1px solid black;
-   
+    margin-top: 10%;
 }
 
 .textmain h1{
@@ -476,6 +468,7 @@
 
     /* <!-- ******************************** Footer ******************************* --> */
 footer{
+    margin-top: 20%;
     height: 15vh;
     width: 100%;
     padding: 3% 0;
@@ -508,4 +501,148 @@ footer{
     transform: translateY(0px);
     transform: translateX(0px);
     opacity: 1;
+}
+
+
+/* ****************************************Media queries **************************************/
+
+/* ****************************************Hero Section **************************************/
+
+@media only screen and (max-width:991px) and (min-width:300px){
+   
+    .main1-content{
+        height: 65%;
+        border: 1px solid black;
+        background-color: #d5cabd;
+        display: block;
+        padding: 50px;
+        text-align: center;
+        margin-top: 10%;
+        width: 100%;
+    }
+    .main1-content .header-text .social-links a{
+        display: none;
+    }
+   .header-text p{
+    margin: auto;
+
+   }
+   .main1-content .header-img img{
+    margin-top: 2%;
+}
+}
+@media only screen and (max-width:767px){
+    .main1-content .header-img img{
+        width:90%;
+    }
+   
+}
+
+/* ****************************************Hero Section End **************************************/
+
+/* ****************************************About Section**************************************/
+
+@media only screen and (max-width:991px) and (min-width:300px){
+   
+    
+    .about-content-2{
+        justify-content: none;
+        background-color: #007664;
+        border: 1px solid black;
+    }
+    .about-content-2 p{
+        font-size: clamp(1rem,4vw,2rem);
+        width: 90%;
+        color: aliceblue;
+        margin-top: 2%;
+    }
+    .about-content-1 h1{
+        font-size: 100px;
+    }
+   
+}
+@media only screen and (max-width:800px) and (min-width:300px){
+    
+    .about-content-2{
+        text-align: center;
+        display: block;
+        padding: 20px;
+       
+    }
+    .about-content-2 p{
+        font-size: clamp(1rem,4vw,5rem);
+      
+        margin: auto;
+    }
+    .About-Section  .about-image-2 img{
+        width: 90%; 
+        margin-top: 2%;
+    }
+    .About-Section  .about-image-1 img{
+        width: 90%; 
+    }
+    @media only screen and (max-width:500px){
+        .About-Section  .about-image-1 img{
+            display: none;
+        }
+    }
+}
+
+/* ****************************************About Section end**************************************/
+
+/* ****************************************Work Experience**************************************/
+@media only screen and (max-width:1399px) and (min-width:992px){
+
+    .work-section1{
+        width: 50%;
+    }
+    .work-section1 h1{
+        margin-top: 4.5rem;
+        width: auto;
+        font-size:clamp(5rem,5vw,1rem);
+        
+    }
+    .work-section1 .illutrations .work-img img{
+        width: 90%;
+        transform: rotate(5deg);
+    }
+    @media only screen and (max-width:992px){
+        .work-section1 h1{
+            margin-top: 5rem;
+           
+        }
+    }
+}
+@media only screen and (max-width:991px) and (min-width:300px){
+    .work-section-main{
+     display: block;
+        margin: auto;
+
+    }
+    .work-section1{
+        width: auto;
+    }
+    .work-section h1{
+        font-size:clamp(5rem,1vw,1rem);
+    }
+    .works .freelance h1{
+        font-size:20px;
+    }
+    .work-section1 h1{
+        font-size:clamp(5rem,1vw,1rem);
+    }
+   
+    .work-section1 .illutrations .work-img img{
+       z-index: 1;
+       position: relative;
+       top:100%;
+    }
+    @media only screen and (max-width:412px){
+        .work-section h1{
+            font-size:clamp(4rem,4vw,1rem)
+        }
+        .work-section1 h1{
+            font-size:clamp(3rem,4vw,1rem);
+        }
+    }
 }
