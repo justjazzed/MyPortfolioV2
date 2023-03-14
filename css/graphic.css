@@ -68,12 +68,13 @@ body{
     color: #231f20;
    
 }
+.main1-content .header-img .social-links-mobile a{
+    display: none;
+}
 .main1-content .header-text p{
     font-size: 25px;
     width: 90%;
     font-weight: 300;
-    
-    
 }
 /******************************* Hero Section End ***************************/
 
@@ -238,7 +239,7 @@ body{
 }
 .main6 h1{
     margin-top: 15%;
-    font-size: 100px;
+    font-size: 150px;
     font-weight: 400;
 }
 .desc1{
@@ -249,7 +250,7 @@ body{
     background-color: #ff6f91;
 }
 .desc1 p{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 200;
 }
 .main6 h1 span{
@@ -261,13 +262,19 @@ body{
 }
 .logos img{
     width: 30%;
+    transition: 0.4s ease-in-out;
 }
+.logos img:hover{
+    width: 35%;
+    transition: 0.4s ease-in-out;
+    border: 1px solid black;
+}
+
 .linkbutton{
     width: 100%;
 }
 .button{
-  
-   width: 10rem;
+  width: 10rem;
   border: 1px solid black;
   background-color: #b39cd0;
   color: black;
@@ -282,15 +289,29 @@ body{
 .main7{
     margin-top: 10%;
     width: 100%;
-    justify-content: center;
+  
+    overflow: hidden;
 }
 .mock-top{
-    
     display: flex;
-
+}
+.mock-top .bot-img img{
+    width: 130%;
+}
+.bot-img--1 img{
+    width: 60%;
+    position: relative;
+    left: 60%;
+}.bot-img--2 img{
+    width: 70%;
+    position: relative;
+    left:25%;
+}
+.bot-img--3 img{
+    width: 80%;
 }
 .mock-desc1{
-    top: 80%;
+    top: 65%;
     position: relative;
     width: 25%;
     left: 10%;
@@ -300,7 +321,7 @@ body{
     font-style: italic;
     padding: 10px;
     width: 50%;
-    height: 27%;
+    height: 35%;
     border: 1px solid black;
     background-color: #b39cd0;
     font-size: 30px;
@@ -308,7 +329,7 @@ body{
 .mock-desc{
     padding: 20px;
     width: 20%;
-    height: 40vh;
+    height: 60%;
     border: 1px solid black;
     background-color: #ffc75f;
     display: flex;
@@ -325,10 +346,6 @@ body{
     font-style: italic;
     
 }
-.mock-top img{
-    width: 900px;
-}
-
 .mock-bot{
     margin-top: 2%;
     display: flex;
@@ -510,22 +527,31 @@ body{
         margin-top: 10%;
         width: 100%;
     }
+    .main1-content .header-img .social-links-mobile a{
+        display: flex;
+        margin: auto;
+        margin-top: 5%;
+       font-size: 25px;
+       color: #231f20;
+    }
+
     .main1-content .header-text .social-links a{
         display: none;
     }
-   .header-text p{
+   .main1-content .header-text p{
     margin: auto;
-
+    font-size: large;
+    font-weight: 500;
    }
    .main1-content .header-img img{
     margin-top: 2%;
 }
 }
-@media only screen and (max-width:767px){
+@media only screen and (max-width:767px)and (min-width:300px){
     .main1-content .header-img img{
         width:90%;
-    }
- 
+  
+       }
 }
 
 /* ****************************************Hero Section End **************************************/
@@ -698,10 +724,10 @@ body{
     }
     .main6 h1{
         margin-top: 15%;
-        font-size: 100px;
+        font-size: 110px;
        
     }
-    @media only screen and (max-width:1199px) and (min-width:300px){
+    @media only screen and (max-width:767px) and (min-width:300px){
         .desc1 p{
             font-size: clamp(1rem,4vw,1rem);
         }
@@ -709,7 +735,7 @@ body{
            gap: 50px;
           }
           .main6 h1{
-            font-size: 70px;
+            font-size: 80px;
            
         }
     }
@@ -726,3 +752,95 @@ body{
        
     }
 }
+/* ****************************************LOGOS end**************************************/
+
+
+
+/* ****************************************Mock up**************************************/
+
+@media only screen and (max-width:1800px) and (min-width:300px){
+   
+    .mock-desc1{
+        top: 0%;
+    }
+    .mock-desc1 p{
+        width:70%;
+        height: auto;
+        font-size: clamp(1rem,4vw,2rem);
+    }
+    .mock-desc{
+        height: auto;
+    }
+    .mock-top h1{
+        font-size: clamp(3.2rem,10vw,1rem);
+    }
+    .mock-top .mock-desc p{
+        font-size: clamp(1.6rem,4vh,1rem);
+    }
+ 
+}
+@media only screen and (max-width:992px) and (min-width:300px){
+   
+   .mock-top{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   }
+   .mock-desc1{
+    margin-right: 20%;
+    width: 40%;
+}
+    .mock-desc1 p{
+        height: auto;
+        width: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    .mock-desc{
+        width: 40%;
+    }
+   
+}
+@media only screen and (max-width:767px) and (min-width:300px){
+    .mock-desc1{
+        margin-right: 20%;
+        width: 40%;
+    }
+        .mock-desc1 p{
+            height: auto;
+            width: auto;
+            justify-content: center;
+            text-align: center;
+        }
+        .mock-desc{
+            text-align: center;
+            width: 80%;
+           
+        }
+        .mock-top .bot-img img{
+            width: 200%;
+        }
+        .bot-img--1 img{
+            width: 100%;
+            position: relative;
+            left: 2%;
+        }.bot-img--2 img{
+            width: 100%;
+            position: relative;
+            left:2%;
+        }
+        .bot-img--3 img{
+            width: 70%;
+            margin-right: 10%;
+        }
+        .mock-bot{
+           gap: 20px;
+        }
+        
+}
+
+/* ****************************************Mock up end**************************************/
+
+
+/* ****************************************Banner Ads**************************************/
