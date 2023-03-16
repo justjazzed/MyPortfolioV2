@@ -57,17 +57,28 @@
             $(window).scroll(function(){
               var scrolled = $(document).scrollTop();
               if(scrolled > navHeight){
-                $('.navbar').addClass('animate');
+                $('.navbar,.modal').addClass('animate');
               }else{
-                $('.navbar').removeClass('animate');
+                $('.navbar,.modal').removeClass('animate');
               }
               
               if(scrolled > scroll){
-                $('.navbar').removeClass('sticky');
+                $('.navbar,.modal').removeClass('sticky');
               }else{
-                $('.navbar').addClass('sticky');
+                $('.navbar,.modal').addClass('sticky');
               }
               scroll = $(document).scrollTop();
             });
 
           });
+
+
+//**********************Mobie Sibebar Menu */
+
+          var menu_btn = document.querySelector("#menu-btn")
+          var sidebar = document.querySelector("#sidebar")
+          var container = document.querySelector(".my-container")
+          menu_btn.addEventListener("click", () => {
+              sidebar.classList.toggle("active-nav")
+              container.classList.toggle("active-cont")
+          })

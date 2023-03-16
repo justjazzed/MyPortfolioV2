@@ -10,34 +10,92 @@ body{
     min-height: 100%;
 }
 
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+}
+
 /******************************* Hero Section ***************************/
+
+.navbar2{
+    width: 250px;
+    height: 50%;
+    position: fixed;
+    margin-left: -300px;
+    background-color: #ffd073;
+    transition: 0.4s;
+    z-index: 999;
+  }
+  .navbar-nav{
+    display: block;
+    text-align: center;
+    
+  }
+  .navbar-nav li a{
+    color: #2f4858;
+  }
+  
+  .nav-link{
+    font-size: 1.25em;
+    
+  }
+  .nav-link a{
+    color: #2f4858;
+  }
+  
+  .nav-link:active,
+  .nav-link:focus,
+  .nav-link:hover {
+    background-color: #ffffff26;
+  }
+  
+  
+  
+  .dropdown-item:active,
+  .dropdown-item:focus,
+  .dropdown-item:hover {
+    background-color: #ffffff26;
+  }
+  
+  .my-container {
+    transition: 0.4s;
+  }
+  
+  
+  /* for navbar */
+  
+  .active-nav {
+    margin-left: 0;
+  }
+  
+  
+  /* for main section */
+  
+  .active-cont {
+    margin-left: 250px;
+  }
+  
+  #menu-btn {
+    position:fixed;
+    top: 0%;
+    background-color: #31897d;
+    z-index: 999;
+  }
+  #menu-btn i{
+    font-size: 25px;
+    color: #2f4858;
+  }
+
+
 .main1{
     height: 100%;
     min-height: 100%;
     padding-bottom: 100px;
     overflow: hidden;
 }
-.nav-links{
-    width: 100%;
-    display: flex;
-    margin-left: -100px;
-    justify-content: center ;
-}
- .nav-links ul{
-    display: flex;
-    margin: 50px;
- }
- .nav-links ul li{
-   
-   font-size: 30px;
-    list-style: none;
- }
- .nav-links ul li a{
-    margin-left: 7em;
-    text-decoration: none;
-    color: #231f20;
-    
-}
+
 
 
 .main1-content{
@@ -48,7 +106,7 @@ body{
     padding: 50px;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .main1-content .header-img img{
     width: 500px;
@@ -353,12 +411,12 @@ body{
 
 /* <!-- ******************************** Banner Design******************************* --> */
 .main8{
-    height: 90vh;
+    height: 90%;
     margin-top: 10%;
     
 }
 .left-img img{
-    
+    width: 100%;
     display: block ;
 }
 .right-img{
@@ -367,7 +425,7 @@ body{
 .right-img .main8-desc{
     padding: 20px;
     width: 50%;
-    height: 40vh;
+    height: auto;
     border: 1px solid black;
     background-color: #008f7a;
     display: flex;
@@ -379,37 +437,49 @@ body{
     font-style: italic;
 }
 .right-img .main8-desc h1 {
-    font-size: 70px;
+    font-size: clamp(3.5rem,3vw,1rem);
 }
 .right-img .img3{
+    width: 100%;
     margin-top: 5%;
-}
-.right-img .img1{
-    margin-top: 10%;
 }
 
+
 .right-img img{
-    width: 300px;
+    
     display: block ;
 }
+.left-img .img3{
+    display: none;
+ 
+}
 .left-img .img2{
+    width: 70%;
     margin-top: 5%;
-    margin-left: 50%;
+    margin-left: 26%;
+}
+.Banner-Mobile{
+    display: none;
 }
 /* <!-- ******************************** Vector portrait ******************************* --> */
 .main9{
     height: 100%;
-   
+   margin-top: 10%;
+  
+}
+.portrait{
+    margin: auto;
 }
 .content-port{
     display: flex;
     align-items: center;
+    
 }
 
 .main9-desc{
     padding: 20px;
     width: 50%;
-    height: 40vh;
+    height: auto;
     border: 1px solid black;
     background-color: #ff8066;
     display: flex;
@@ -424,61 +494,69 @@ body{
 }
 
 .port-img img{
-    margin-left: 5%;
+    margin-left: 1%;
     border: 1px solid black;
-    width: 70%; 
+    width: 65%; 
 }
-.SHIRT{
-    text-align: center;
+.portrait .SHIRT{
+   text-align: center;
 }
 .SHIRT img{
-   
     width: 30%;
-    transition: 0.2s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 .SHIRT img:hover{
-    transform: translateY(-30px);
-    transition: 0.2s ease-in-out;
+    width: 35%;
+    transition: 0.4s ease-in-out;
 }
 
 /* <!-- ******************************** Contact ******************************* --> */
-.contact{
-    margin-top: 10%;
-    height: 80%;
+.main-contact-1{
+    height: 100%;
+    min-height: 100%;
+    padding-bottom: 100px;
+    overflow: hidden;
 }
-.border-contact{
-    align-items: center;
-    padding: 20px;
-    height: 70vh;
+
+
+
+.main1-contact{
+    width: 100%;
     border: 1px solid black;
     background-color: #d5cabd;
-    padding-left: 130px;
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
 }
-.border-contact h1{
-    font-size: 100px;
+.main1-contact .header-img img{
+    width: 500px;
 }
-.border-contact p{
+.main1-contact .header-text h1{
+    font-size: 80px;
+    font-weight: 700;
+    margin-top: 5%;
+}
+
+.main1-contact .header-text p{
+    font-size: 40px;
+    width: 90%;
+    font-weight: 300;
     font-family: 'Unna', serif;
     font-style: italic;
-    font-size: 30px;
-}
-.border-contact p a{
-    text-decoration: none;
-    color: #231f20;
-}
-.border-contact img{
-    width: 400px;
-    transform: rotate(5deg);
+    text-align: center;
+   
 }
 
 
     /* <!-- ******************************** Footer ******************************* --> */
 .footer-Content{
-    margin-top: 100%;
-    height: 15dvh;
+    margin-top: 10%;
+    height: 15%;
     width: 100%;
     padding: 3% 0;
-    text-align: center;
+   
     background-color: #ffd073;
     font-weight: 300;
     color: rgb(0, 0, 0);
@@ -844,3 +922,160 @@ body{
 
 
 /* ****************************************Banner Ads**************************************/
+@media only screen and (max-width:992px) and (min-width:300px){
+    .right-img .main8-desc h1 {
+        font-size: clamp(3rem,3vw,1rem);
+    }
+    .right-img .main8-desc p {
+        font-size: clamp(1rem,3vw,1rem);
+    }
+    .right-img .main8-desc{
+        padding: 20px;
+        width: auto;
+        height: auto;  
+    }
+    .right-img .img3{
+        
+        margin-top: 5%;
+    }
+    .left-img .img1{
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    
+   
+    .left-img .img2{
+        width:100%;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+}
+@media only screen and (max-width:600px) and (min-width:300px){
+    .right-img .main8-desc h1 {
+        font-size: clamp(2rem,3vw,1rem);
+    }
+    .right-img .main8-desc p {
+        font-size: clamp(1rem,1vw,1rem);
+    }
+  
+    .right-img .img3{
+        width: 100%;
+        margin-top: 5%;
+    }
+    .right-img .img1{
+        width: 100%;
+        margin-top: 30%;
+    }
+    
+    .right-img img{
+        display: none ;
+    }
+   
+    .left-img .img2{
+        width:100%;
+        margin-top: 5%;
+       
+    }
+   
+   
+}
+@media only screen and (max-width:500px) and (min-width:300px){
+    .main8 .row{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .right-img{
+        width: auto;
+        margin-left: -2%;
+    }
+    .left-img{
+        margin-top: -5%;
+        width:90%;
+        margin-left: -18%;
+    }
+}
+
+/* ****************************************Banner Ads ends**************************************/
+
+
+
+/* ****************************************Vector Portraits**************************************/
+
+@media only screen and (max-width:992px) and (min-width:300px){
+   .content-port{
+    display: block;
+   }
+   .port-img img{
+    margin-top: 5%;
+    width: 90%; 
+}
+.port-img{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main9-desc{
+    padding: 20px;
+    width: 40%;
+    height: 50%;
+    margin: auto;
+    
+}
+.main9-desc h1{
+    font-size: 50px;
+}
+
+@media only screen and (max-width:767px) and (min-width:300px){
+    .main9-desc h1{
+        font-size: clamp(3rem,4vw,1rem);
+    }
+    .main9-desc{
+        width: auto;
+        height:auto; 
+    }
+}
+}
+
+/* ****************************************Vector Portraits end**************************************/
+
+
+/* ****************************************Contacts**************************************/
+
+@media only screen and (max-width:992px) and (min-width:300px){
+   
+    .main1-contact{
+        height: 65%;
+        border: 1px solid black;
+        background-color: #d5cabd;
+        display: block;
+        padding: 50px;
+        text-align: center;
+        margin-top: 10%;
+        width: 100%;
+    }
+    
+    .main1-contact .header-text p{
+    margin: auto;
+    font-size:30px;
+    font-weight: 500;
+   }
+   .main1-contact .header-text h1{
+    margin: auto;
+    font-size:4rem;
+    font-weight: 500;
+   }
+   .main1-contact .header-text{
+    text-align: center;
+   }
+   .main1-contact .header-img img{
+    margin-top: 2%;
+}
+}
+@media only screen and (max-width:767px)and (min-width:300px){
+    .main1-contact .header-img img{
+        width:90%;
+  
+       }
+}

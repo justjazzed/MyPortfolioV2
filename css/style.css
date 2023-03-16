@@ -9,7 +9,7 @@ body {
   background-color: #1d283a;
   min-height: 100%;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+ 
 
 }
 
@@ -20,14 +20,70 @@ ul li {
 /* ************************************Automaticaly set to list-style to none********************************* */
 
 
+.navbar2{
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  margin-left: -300px;
 
-
-
-
-
-.mobile-nav {
-  display: none;
+  background-color: #151e30;
+  transition: 0.4s;
+  z-index: 999;
 }
+.navbar-nav{
+  display: block;
+  text-align: left;
+  margin-left: 15%;
+}
+
+.nav-link{
+  font-size: 1.25em;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+  background-color: #ffffff26;
+}
+
+
+
+.dropdown-item:active,
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: #ffffff26;
+}
+
+.my-container {
+  transition: 0.4s;
+}
+
+
+/* for navbar */
+
+.active-nav {
+  margin-left: 0;
+}
+
+
+/* for main section */
+
+.active-cont {
+  margin-left: 250px;
+}
+
+#menu-btn {
+  position:fixed;
+  top: 0%;
+  background-color: #161F32;
+  color: #fff;
+  z-index: 999;
+}
+#menu-btn i{
+  font-size: 25px;
+  color: #00f7ff;
+}
+
 /* ************************************hero********************************* */
 .main{
   background: url(../images/WebBGnew-01.png);
@@ -36,7 +92,7 @@ ul li {
 }
 .Hero-Section{
   min-height: 100vh;
-  height: 100dvh;
+  height: 100%;
   align-items: center;
   text-align: center;
 }
@@ -79,6 +135,14 @@ ul li {
   transition:  0.5s ease-in-out;
   z-index: 99;
 }
+.modal-nav .animate{
+  opacity: 0;
+  transition:  0.5s ease-in-out;
+}
+.modal-nav .sticky{
+  opacity: 0;
+  transition:  0.5s ease-in-out;
+}
 .navbar{
   background-color: #2A3A5E;  
   position: fixed;
@@ -103,7 +167,7 @@ ul li {
 /* ************************************about********************************* */
 
 .About-Section__1{
-  padding-top: 10%;
+  padding-top: 15%;
  
 }
 .About-Section{
@@ -204,7 +268,6 @@ width: 50%;
 .BoxSlider__text p{
   width: 90%;
   color: #ffffff;
-
   margin: auto;
 
 }
@@ -349,19 +412,21 @@ width: 50%;
 .right input,textarea{
   color: cyan;
 }
+textarea {
+  color: cyan;
+    }
 .footer-content{
   margin-top: 5%;
 }       
 
 
                   /***********************************footer******************************** */
-.py-4 ul li a{
-  color: #fff;
-}
-.py-4 p{
-  color: #fff;
-}
+.footer-content{
+  justify-content: center;
+  width: 100%;
+  background-color: #161f32;
 
+}
              /***********************************footer******************************** */
 
 .reveal {
@@ -382,8 +447,9 @@ width: 50%;
 
 @media only screen and (max-width:991px)and (min-width:375px){
   .Hero-Section{
-    min-height: 100vh;
-    height: 100dvh;
+    margin-top: -15%;
+    min-height: 100%;
+    height: 100%;
     padding-top: 20%;
     display: block;
   }
@@ -409,11 +475,11 @@ width: 50%;
       padding-top: 30%;
     }
   }
-  
+ 
 }
 @media only screen and (max-width:545px)and (min-width:300px){
   .Hero-Section{
-    padding-top: 40%;
+  
     text-align: center;
   }
   .Hero-Section__Intro h1 {
@@ -443,7 +509,7 @@ width: 50%;
     font-size: clamp(1.5rem,4vw,1rem);
   }
   .About-Section{
-    margin-top: 15%;
+  
     min-height: 30vh;
     height:auto;
   
@@ -452,21 +518,23 @@ width: 50%;
 }
 @media only screen and (max-width:767px) and (min-width:375px){
   .About-Section{
-    margin-top: 15%;
-    min-height: 30vh;
+
+    min-height: 30%;
     height:auto;
   }
   .About-Section__Content p{
     color: #fff;
     font-size: clamp(1rem,4vw,.1rem);
   }
- 
+ .map_box{
+  margin-top: 10%;
+ }
 }
 
 @media only screen and (max-width:400px) and (min-width:300px){
   .About-Section{
-    margin-top: 20%;
-    min-height: 50vh;
+   
+    min-height: 50%;
   }
   .About-Section__Content{
     display: block;
@@ -483,14 +551,29 @@ width: 50%;
     width: auto;
   }
 }
-@media only screen and (max-width:375px) {
-  .About-Section{
-    margin-top: 50%;
-  }
- 
- 
-}
 
+/* ------------------------------------------------Services-------------------------------------- */
+
+@media only screen and (max-width:991px)and (min-width:350px){
+  .card{
+    margin-top: 5%;
+  }
+  .BoxSlider__text p{
+    width: auto;
+    font-size: clamp(4rem,4vw,1rem);
+    color: #ffffff;
+    margin: auto;
+  }
+  .background-block{
+    width: 100%; 
+    height: 30; 
+    background-color: #161F32; 
+    position: relative; 
+    margin-top: -20%;
+    z-index: -1;
+  
+  }
+}
 
 
 
@@ -499,7 +582,9 @@ width: 50%;
   .carousel-mobile {
     display: none;
   }
- 
+  .BoxSlider__text p{
+    font-size:15px;
+  }
   .BoxSlider__text h2 {
     
      font-size: clamp(3rem,4vw,1em);
@@ -575,5 +660,8 @@ width: 50%;
   .social-links {
     display: flex;
     gap: 15px;
+  }
+  .mails{
+    display: flex;
   }
 }
