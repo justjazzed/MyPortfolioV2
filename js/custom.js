@@ -7,14 +7,13 @@
         function changeCircleColor(color){
             const circle = document.querySelector('.circle')
             circle.style.background = color;
-
         }
 
 
               // *********************************Fade in scroll****************************************
 
 
-        window.addEventListener('scroll',reveal)
+            window.addEventListener('scroll',reveal)
 
               function reveal(){
                   var reveals = document.querySelectorAll('.reveal');
@@ -23,7 +22,7 @@
 
                   var windowheight = window.innerHeight;
                   var revealtop = reveals[i].getBoundingClientRect().top
-                  var revealpoint = 150;
+                  var revealpoint = 100;
 
                   if(revealtop <windowheight - revealpoint){
                       reveals[i].classList.add('active');
@@ -33,7 +32,7 @@
                       
                   }
               }            
-}
+              }
 
    // **********************************auto hide navbar****************************//
         // {
@@ -49,7 +48,8 @@
         //         lastScrollY = window.scrollY;
         //       });
         //         }
-
+        
+        jQuery.noConflict()
           $(function(){
             var scroll = $(document).scrollTop();
             var navHeight = $('.navbar').outerHeight();
@@ -73,12 +73,13 @@
           });
 
 
-//**********************Mobie Sibebar Menu */
+      //**********************Mobie Sibebar Menu */
+          
+         
 
-          var menu_btn = document.querySelector("#menu-btn")
-          var sidebar = document.querySelector("#sidebar")
-          var container = document.querySelector(".my-container")
-          menu_btn.addEventListener("click", () => {
-              sidebar.classList.toggle("active-nav")
-              container.classList.toggle("active-cont")
-          })
+
+      //**********************Disapears navbar from Logo Page*********** */
+
+
+      
+        
