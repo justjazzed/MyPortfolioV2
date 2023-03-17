@@ -155,11 +155,11 @@ ul li {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  color: #716455;
+
 }
 .navbar-collapse ul li a {
   font-size: clamp(.10rem,4vw,1.5rem);
-  color: #716455;
+ 
   text-decoration: none;
 }
 
