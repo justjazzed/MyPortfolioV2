@@ -534,7 +534,7 @@ margin: 5% 0;
 }
 .main-content p {
   font-size: 20px;
-  width: 500px;
+ 
  }
 }
 @media only screen and (max-width:767px) and (min-width:300px){
@@ -551,6 +551,8 @@ margin: 5% 0;
   .logos h1 {
     font-size: 70px;
   }
+ 
+  }
   @media only screen and (max-width:500px) and (min-width:300px){
     .main-content h1 {
    
@@ -558,8 +560,8 @@ margin: 5% 0;
     
     }
     .main-content p {
-     font-size: 20px;
-    width: 30px;
+     font-size: 15px;
+   
     }
   
     .logos h1 {
@@ -569,7 +571,6 @@ margin: 5% 0;
       
       height: 70vh;
     }
-  }
   }
 
 
