@@ -17,8 +17,15 @@
 </head>
 <body>
     
+
+
+ 
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+     </a>
+
         <!--*********************************** Navbar **************************************-->
-        <nav class="nav d-none d-lg-flex to-top-1">
+        <nav class="navbar-1 navbar-expand-lg d-none d-lg-flex to-top-1">
             <div class="container ">
                 <div class="row navbar">
                     <div class="nav-brand">
@@ -36,9 +43,7 @@
         
 
         
-        <a href="#" class="to-top">
-            <i class="fas fa-chevron-up"></i>
-         </a>
+       
       
          <!--*********************************** Hero Section **************************************-->
 
@@ -474,20 +479,20 @@
 
                         $(function(){
                                 var scroll = $(document).scrollTop();
-                                var navHeight = $('.nav').outerHeight();
+                                var navHeight = $('.navbar-1').outerHeight();
 
                                 $(window).scroll(function(){
                                 var scrolled = $(document).scrollTop();
                                 if(scrolled > navHeight){
-                                    $('.nav').addClass('animate');
+                                    $('.navbar-1').addClass('animate');
                                 }else{
-                                    $('.nav').removeClass('animate');
+                                    $('.navbar-1').removeClass('animate');
                                 }
                                 
                                 if(scrolled > scroll){
-                                    $('.nav').removeClass('sticky');
+                                    $('.navbar-1').removeClass('sticky');
                                 }else{
-                                    $('.nav').addClass('sticky');
+                                    $('.navbar-1').addClass('sticky');
                                 }
                                 scroll = $(document).scrollTop();
                                 });

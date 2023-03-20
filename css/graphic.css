@@ -92,7 +92,6 @@ ul li a{
     top: 0%;
     background-color: #31897d;
     z-index: 999;
-   
     transition: all .4s;
   }
   #menu-btn i{
