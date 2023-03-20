@@ -41,7 +41,48 @@
             </div>   
         </nav>
         
-
+         <!--*********************************** Navbar Mobile**************************************-->
+         <div class="container mobile-nav">
+            <a href="#notmove" id="notmove" class="toggleBox">
+                <span class="icon">
+                 
+                </span>
+            </a>
+           
+            <ul class="navItemlink">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-home" style="--i:1"></i>
+                        <span style="--g:1">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" >
+                        <i class="fa fa-user" style="--i:1"></i>
+                        <span style="--g:1">about</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" >
+                        <i class="fa fa-folder" style="--i:1"></i>
+                        <span style="--g:1">portfolio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-message" style="--i:1"></i>
+                        <span style="--g:1">chat</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" >
+                        <i class="fa fa-globe" style="--i:1"></i>
+                        <span style="--g:1">home</span>
+                    </a>
+                </li>
+            </ul>
+         </div>
+         
         
        
       
@@ -475,9 +516,25 @@
                             });
                         })
 
+                          /**********************Mobile Tab***********/
+                        var toggleClick = document.querySelector(".toggleBox");
+                            var mobileNav = document.querySelector(".mobile-nav");
+                            toggleClick.addEventListener('click',()=>{
+                            toggleClick.classList.toggle('active');
+                            mobileNav.classList.toggle('active');
+                             })
 
 
-                        $(function(){
+
+                             $(document).ready(function() {
+                                    $('#notmove').click(function() {
+                                        doSomethingCool();
+                                        return false; // cancel the event
+                                    });
+                                });
+                   
+
+                        /*$(function(){
                                 var scroll = $(document).scrollTop();
                                 var navHeight = $('.navbar-1').outerHeight();
 
@@ -497,7 +554,7 @@
                                 scroll = $(document).scrollTop();
                                 });
 
-                            });
+                            });*/
          </script>
        
 </body>
