@@ -28,7 +28,7 @@ html,body{
   opacity:0;
   pointer-events: none;
   transition: all .4s;
- 
+
 }
 
 .to-top.active {
@@ -36,12 +36,29 @@ html,body{
   pointer-events: auto;
   opacity:1;
 }
+
+
+/* <!--*********************************** Navbar auto hide **************************************--> */
+
+.nav .animate{
+  opacity: 0;
+  transition:  0.5s ease-in-out;
+}
+.nav .sticky{
+  opacity: 1;
+  transition:  0.5s ease-in-out;
+  z-index: 99;
+}
 /* <!--*********************************** Navbar **************************************--> */
+
 .nav {
   padding: 10px;
   width: 100%;
   height: 10%;
-  background-color: #2f4858;
+  background-color: #2f4858ad;
+  position: fixed;
+  z-index: 999;
+
 }
 .nav-brand {
   display: flex;
@@ -56,6 +73,9 @@ html,body{
 .nav-brand ul li a {
   color: aliceblue;
   text-decoration: none;
+  font-size: 21px;
+  align-items: center;
+  letter-spacing: 0.1em;
 }
 .nav-brand h1 {
   font-weight: 800;
@@ -108,7 +128,7 @@ html,body{
 
 .content-1 {
   display: flex;
-  height: 80vh;
+  height: 90vh;
 }
 .main-content {
   display: flex;
@@ -167,7 +187,6 @@ padding-right: 10%;
  gap: 10%;
 }
 .main-content-2__right-icon .icon {
-
 display: flex;
 align-items: center;
 }
@@ -678,6 +697,9 @@ padding: 100px 50px 50px 50px;
             width: 100%;
           }
           .main3 .main-content-2__desc {
+            width: 100%;
+          }
+          .main4 .main-content-2__desc {
             width: 100%;
           }
       }
