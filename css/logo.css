@@ -327,7 +327,7 @@ width: 50rem;
 
 /* <!--*********************************** main3**************************************--> */
 .main3{
-  background: url(/images/SupermanBGC-01.png);
+  background: url(../images/SupermanBGC-01.png);
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -346,7 +346,7 @@ width: 50rem;
 
 /* <!--*********************************** main4**************************************--> */
 .main4{
-  background: url(/images/tdtBGC-01.png);
+  background: url(../images/tdtBGC-01.png);
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -363,7 +363,7 @@ width: 50rem;
 } 
 /* <!--*********************************** main5**************************************--> */
 .main5{
-background: url(/images/Logo/space.jpg);
+background: url(../images/Logo/space.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -372,7 +372,7 @@ background: url(/images/Logo/space.jpg);
 .main6{
 
   overflow: hidden;
-  background: url(/images/SupermanBGC-01.png);
+  background: url(../images/SupermanBGC-01.png);
   background-size: cover;
   background-position: center;
   }
@@ -390,7 +390,7 @@ background: url(/images/Logo/space.jpg);
   /* <!--*********************************** Main Content 7**************************************--> */
 .why-us-content-1{
   padding: 30px;
-  height: 90%;
+  height: 95%;
   align-items: center;
   background: url(../images/Logo/web-Background-2-01.png);
   background-size: cover;
@@ -564,11 +564,103 @@ padding: 100px 50px 50px 50px;
 
 
 
+/* <!--*********************************** Contact form **************************************--> */
+#Contact-form {
+ 
+  background-image: url(../images/Logo/web-Background-2-01.png);
+  background-position: center;
+  background-size: cover;
+}
+.form-label {
+  color: aliceblue;
+}
+.form-area {
+  padding-top: 7%;
+}
+.row.single-form {
+  box-shadow: 10px 9px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 9px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 9px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.left {
+  background: #161f3200;
+  padding: 210px 125px;
+}
+.left h2 {
+  font-family: poppins;
+  color: #fff;
+  font-weight: 700;
+  font-size: 48px;
+  font-family: "Mukta", sans-serif;
+}
+.left h2 span {
+  font-weight: 100;
+}
+.single-form {
+  background: transparent;
+}
+.right {
+  padding: 70px 100px;
+  position: relative;
+}
+.right i {
+  position: absolute;
+  font-size: 80px;
+  left: -27px;
+  top: 40%;
+  color: #ffffff00;
+}
+.form-control {
+  border: 1px solid #ffffff;
+  background-color: transparent;
+}
+.right button {
+  border: 1px solid white;
+  border-radius: 10px;
+  background: transparent;
+  width: 150px;
+  color: #fff;
+  padding: 15px 0;
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.right button:hover {
+  transition: 0.5s ease;
+  background-color: #00f7ff;
+}
+
+.social-links {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+.social-links i {
+  color: #00f7ff;
+}
+
+.contacts {
+  color: #ffffff;
+}
+.right input,textarea{
+  color: rgb(255, 255, 255);
+}
+textarea {
+  color: rgb(255, 255, 255);
+    }
+.footer-content{
+  margin-top: 5%;
+}       
 
 
+                  /***********************************footer******************************** */
+.footer-content{
+  justify-content: center;
+  width: 100%;
+  background-color: #242527;
 
-/* <!--*********************************** Mobile Version **************************************--> */
-
+}
 
 /* <!--*********************************** Hero **************************************--> */
 @media only screen and (max-width:1300px) and (min-width:300px){
@@ -818,5 +910,38 @@ padding: 100px 50px 50px 50px;
             width: 100%;
           }
       }
-      
+      /* <!--*********************************** Contact **************************************--> */
   
+      @media (max-width: 767px) {
+        footer {
+          bottom: 0;
+        }
+      
+        .left {
+          padding: 90px 15px;
+          text-align: center;
+        }
+        .left h2 {
+          font-size: 40px;
+        }
+        .right {
+          padding: 25px;
+        }
+        .right i {
+          top: -52px;
+          transform: rotate(90deg);
+          left: 46%;
+        }
+        .right button {
+          width: 150px;
+          padding: 12px 0;
+        }
+        .social-links {
+          display: flex;
+          gap: 15px;
+        }
+        .mails{
+          display: flex;
+        }
+      }
+      
