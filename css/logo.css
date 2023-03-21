@@ -323,7 +323,12 @@ width: 50rem;
 
 
 /* <!--*********************************** logo layout 2**************************************--> */
-
+.main2{
+  background: url(../images/Logo/BoltonBGC-01.png);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
 
 /* <!--*********************************** main3**************************************--> */
 .main3{
