@@ -39,13 +39,12 @@ display: block;
 
 
 /* <!--*********************************** Navbar mobile **************************************--> */
-/* .mobile-nav{
-  top: 50px;
+.mobile-nav{
+  top: 10px;
   height: 70px;
   left: 1%;
   width: 70px;
   background-color: rgba(0, 0, 0, 0.26);
-  border-radius: 50px;
   border: 1px solid black;
   position: fixed;
   transition: 0.4s ease;
@@ -56,10 +55,12 @@ display: block;
   height: 420px;
  
 }
-.mobile-nav.to-top{
-  opacity: 0;
+
+.tab-mobile.to-top-1{
+  transition: all 0.4s ;
+ opacity: 0;
 }
-.mobile-nav.to-top.active{
+.tab-mobile.to-top-1.active{
   bottom:32px;
   pointer-events: auto;
   opacity:1;
@@ -73,44 +74,31 @@ display: block;
 }
 .mobile-nav .icon{
   position: absolute;
-  height: 4px;
-  width: 35px;
-  top: 50%;
-  left: 30%;
-  transform: translate(-50%,-50%);
-  background-color: rgb(0, 0, 0);
-  border-radius: 50px;
+  left: 3px;
+  top: px;
 }
-.mobile-nav .toggleBox.active .icon{
-  width: 0;
+.mobile-nav .toggleBox .icon:nth-child(2)  {
+  opacity: 0;
+
 }
-.mobile-nav .icon::before,.icon::after{
-  position: absolute;
-  content: '';
-  height: 4px;
-  width: 35px;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  background-color: rgb(0, 0, 0);
-  border-radius: 50px;
-  transition: 0.3s;
+.mobile-nav .toggleBox.active .icon:nth-child(2)  {
+  position: relative;
+  left: 10px;
+  font-size: 40px;
+  color: #000000;
+  opacity: 1;; 
+ 
 }
-.mobile-nav .icon::before{
-  top:12px;
+.mobile-nav .toggleBox .icon:nth-child(1)  {
+  color: #000000;
+  font-size: 40px;
+  opacity: 1;; 
 }
-.mobile-nav .icon::after{
-  bottom:8px;
+.mobile-nav .toggleBox.active .icon:nth-child(1)  {
+  opacity: 0; 
+ 
 }
-.mobile-nav .toggleBox.active .icon::before{
-width: 40px;
-transform-origin: right;
-transform: translate(-25px,4px) rotate(45deg);
-}
-.mobile-nav .toggleBox.active .icon::after{
-  width: 40px;
-  transform-origin: right;
-  transform: translate(-25px,-6px) rotate(-45deg);
-}
+
 .mobile-nav .navItemlink{
   margin-top: 100%;
    width: 100%;
@@ -134,7 +122,6 @@ transform: translate(-25px,4px) rotate(45deg);
   font-style: 18px;
   padding: 25px 0;
   width: 100%;
-
   text-align: center;
   transform: scale(0);
 }
@@ -150,7 +137,7 @@ transform: translate(-25px,4px) rotate(45deg);
 }
 .mobile-nav.active .navItemlink li:hover a i{
   transition: 0.2s ease;
-  color: blueviolet;
+  color: rgb(0, 247, 255);
 }
 .mobile-nav li a span{
   text-decoration: none;
@@ -172,18 +159,18 @@ transform: translate(-25px,4px) rotate(45deg);
   color: rgb(43, 198, 226);
 }
 
- */
+
 
 /* <!--*********************************** Navbar mobile **************************************--> */
 
-.navbar-1.animate{
+.navbar-1 .animate{
   opacity: 0;
   transition:  0.5s ease-in-out;
 }
-.navbar-1.sticky{
+.navbar-1 .sticky{
   opacity: 1;
   transition:  0.5s ease-in-out;
-  z-index: 99;
+  z-index: 999;
 }
 /* <!--*********************************** Navbar **************************************--> */
 
@@ -192,7 +179,7 @@ transform: translate(-25px,4px) rotate(45deg);
   width: 100%;
   height: 10%;
   background-color: #2f4858;
-
+  position: sticky;
   z-index: 999;
 
 }

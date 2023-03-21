@@ -63,7 +63,7 @@
               }
               
               if(scrolled > scroll){
-                $('.navbar,.modal').removeClass('sticky');
+                $('.navbar,.modal,').removeClass('sticky');
               }else{
                 $('.navbar,.modal').addClass('sticky');
               }
