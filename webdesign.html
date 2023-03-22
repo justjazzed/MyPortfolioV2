@@ -10,6 +10,10 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Mukta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" 
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     
@@ -55,8 +59,7 @@
                     </div>
                 </div>
             </section>
-  <!-- *********************************About************************************ -->
-
+  
 
    <!-- *********************************Services************************************ -->
            
@@ -123,7 +126,17 @@
           
               </section>
 
+<!-- *********************************Owl Carousel************************************ -->
 
+<div class="owl-carousel owl-theme">
+    <div class="item"><img src="images/WebFrame.png" alt=""></div>
+    <div class="item"><img src="images/EktoFrame.png" alt=""></div>
+    <div class="item"><img src="images/boltonframe.png" alt=""></div>
+    <div class="item"><img src="images/SupermanFrame.png" alt=""></div>
+    <div class="item"><img src="images/onfireFrame.png" alt=""></div>
+    <div class="item"><img src="images/onfireFrame.png" alt=""></div>
+    
+</div>
 
    <!-- *********************************Works************************************ -->
 
@@ -144,35 +157,24 @@
 
         <div class="row row_right">
 
-            <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up"> 
+
                 <img src="images/WebFrame.png" alt="">
+  
             </div>
 
-            <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-up">
-
+            <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="map_box">
 
-                    <h4>Adobe Illustrator</h4>
+                    <h4>Adobe photoshop</h4>
 
-                    <ul>
-
-                        <li><i class="fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-
-                        <li><i class="fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                      </li>
-
-                        <li><i class="fa fa-caret-right" aria-hidden="true"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-
-
-
-                    </ul>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ducimus.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ducimus.
+                    </p>
 
                 </div>
-
             </div>
-
-
-
+                
         </div>
 
         <!--row left-->
@@ -185,18 +187,9 @@
 
                     <h4>Adobe photoshop</h4>
 
-                    <ul>
-
-                        <li><i class="fa fa-caret-right" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-
-                        <li><i class="fa fa-caret-right" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-
-                        <li><i class="fa fa-caret-right" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-
-
-
-                    </ul>
-
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ducimus.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ducimus.
+                    </p>
                 </div>
 
             </div>
@@ -221,25 +214,13 @@
 
                     <h4>Figma</h4>
 
-                    <ul>
-
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-
-                        <li> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-
-
-
-                    </ul>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ducimus.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ducimus.
+                    </p>
 
                 </div>
 
             </div>
-
-
 
         </div>
 
@@ -253,14 +234,9 @@
 
                     <h4>VS Code</h4>
 
-                    <ul>
-
-                        <li> Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-
-
-
-                    </ul>
-
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ducimus.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ducimus.
+                    </p>
                 </div>
 
             </div>                 
@@ -269,16 +245,50 @@
                 <img src="images/SupermanFrame.png" alt="">
             </div>
 
-
-
         </div>
 
 
         
 
+
+
+
 </section>
 
 
 
+
+
+    
+               <!-- *********************************Scripts************************************ -->
+              
+               <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" 
+               crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+               <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+               <script>
+                $('.owl-carousel').owlCarousel({
+                            loop:true,
+                            margin:10,
+                            nav:false,
+                            autoplay:true,
+                            autoplayTimeout:5000,
+                            autoplayHoverPause:true,
+                            stagePadding: 50,
+                            dots:false,
+                            responsive:{
+                                0:{
+                                    items:1
+                                },
+                                600:{
+                                    items:3
+                                },
+                                1000:{
+                                    items:5
+                                }
+                            }
+                            
+                        })
+               </script>
 </body>
 </html>
