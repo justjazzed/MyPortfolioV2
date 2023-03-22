@@ -312,9 +312,8 @@ width: 50%;
   font-weight: 700;
 }
 
-.juicy-roadmap_new {
+.tools-main {
   width: 100%;
-  
   background-position: center;
   background-size: cover;
 }
@@ -586,7 +585,7 @@ textarea {
   .map_box {
     text-align: left;
   }
-  @media only screen and (max-width:360px)and (min-width:350px){
+  @media only screen and (max-width:380px)and (min-width:350px){
     .map_box {
       margin-top: 10%;
       display:flex;
