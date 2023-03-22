@@ -128,13 +128,24 @@ a {
 .owl-carousel img{
   cursor: pointer;
 }
+.owl-carousel img{
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.owl-carousel img:hover{
+  transform: translateY(-20px);
+  transition: 0.5s ease;
+  z-index: 999;
+}
+
+
 .owl-carousel{
   height: 35vh;
 }
 /****************************************** Services ********************************/
 .main3 {
 
-  padding-top: 5%;
+ 
   min-height: 100%;
 }
 
@@ -230,6 +241,9 @@ width:auto;
         text-align: center;
       }
       @media only screen and (max-width:767px)and (min-width:350px){
+        .main4{
+          margin-bottom: 20%;
+        }
         .row_right img{
           margin-left: 0;
          }
