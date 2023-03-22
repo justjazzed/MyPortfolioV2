@@ -260,7 +260,6 @@ width: 50%;
 } 
 
 .BoxSlider__text span{
-  color: #017143;
   font-size: 1.2em;
   font-weight: 900;
 }
@@ -278,7 +277,7 @@ width: 50%;
   margin-top: 20px;
   padding: 8px 20px;
   background: #017143;
-  color: #fff;
+  color: #000000;
   border-radius: 40px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -327,7 +326,16 @@ width: 50%;
   padding: 12px;
   border-radius: 20px;
   text-align: center;
+  display: flex;
+  align-items: center;
 }
+.map_box p{
+ margin-left: 5%;
+}
+.map_box img{
+  width: 100px;
+}
+
             /* ************************************Skill Info End********************************* */
 
 
@@ -573,8 +581,20 @@ textarea {
   
   }
 }
-
-
+/* ------------------------------------------------Tools-------------------------------------- */
+@media only screen and (max-width:991px)and (min-width:350px){
+  .map_box {
+    text-align: left;
+  }
+  @media only screen and (max-width:360px)and (min-width:350px){
+    .map_box {
+      margin-top: 10%;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
 
 /* ------------------------------------------------Carousel-------------------------------------- */
 @media only screen and (max-width:992px) and (min-width:500px){
