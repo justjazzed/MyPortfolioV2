@@ -39,6 +39,7 @@ a {
   height: 40px;
   text-align: center;
   cursor: pointer;
+  background-color: #ffffff;
 }
 .navbar ul li:nth-child(3) {
   width: 100px;
@@ -200,13 +201,13 @@ width:auto;
 /****************************************** Media Queries ********************************/
 /******************************************Hero ********************************/
 
-@media only screen and (max-width:680px)and (min-width:350px){
+@media only screen and (max-width:767px)and (min-width:350px){
 .hero-main{
   margin-top: 20%;
-  height: 70%;
+  height: 60%;
 }
 .hero-main-hero-content-text h1 {
-  font-size: 120px;
+  font-size: 12vw;
 
 }
 
@@ -216,10 +217,28 @@ width:auto;
 }
 .hero-content-text h1 {
   font-size: 70px;
- 
   letter-spacing: 0.2em;
 }
+.hero{
+  height: 50vh;
+  padding-bottom: 20%;
+}
+
+}
+@media only screen and (max-width:600px)and (min-width:350px){
+  .hero{
+    height: 50vh;
+    padding-bottom: 30%;
+  }
+}
 @media only screen and (max-width:500px)and (min-width:350px){
+  .hero{
+    padding-bottom: 5%;
+
+  }
+  .hero-main{
+    height:auto;
+  }
   .hero-main-hero-content-text h1 {
     font-size: 75px;
   }
@@ -231,11 +250,16 @@ width:auto;
     letter-spacing: 0.2em;
   }
 }
-}
 
 
 
     /****************************************** Work Process ********************************/
+    @media only screen and (max-width:1500px)and (min-width:350px){
+      .main4{
+        margin-top: -6%;
+        height: auto;
+      }
+    }
     @media only screen and (max-width:991px)and (min-width:350px){
         .main4{
           height: auto;
@@ -327,6 +351,12 @@ width:auto;
     position: relative; 
     margin-top: -20%;
     z-index: -1;
-  
   }
+ 
+}
+@media only screen and (max-width:600px)and (min-width:350px){
+  
+  @media only screen and (max-width:500px)and (min-width:350px){
+  
+}
 }
