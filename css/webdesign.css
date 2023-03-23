@@ -300,9 +300,7 @@ width:auto;
         text-align: center;
       }
       @media only screen and (max-width:767px)and (min-width:350px){
-        .main4{
-          margin-bottom: 20%;
-        }
+     
         .row_right img{
           margin-left: 0;
          }
@@ -317,6 +315,7 @@ width:auto;
             }
       }
       }
+   
       @media only screen and (max-width:500px)and (min-width:350px){
         .row_right img{
           width: 300px;
