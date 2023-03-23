@@ -24,10 +24,49 @@
                                     <li><a href="#">About</a> </li>
                                     <li><a href="#">Home</a> </li>
                                     <li><a href="#service1">Services</a></li>
-                                    <li><a href="#">contact</a></li>
+                                    <li><a href="#contact">contact</a></li>
                                 </ul>
                             </div>
                         </nav>
+
+
+
+
+                        <div class="mobile-nav d-lg-none">
+                            <nav class="navbar2  navbar-expand d-flex flex-column align-item-start " id="sidebar">
+                              <a href="#" class="navbar-brand text-light mt-5 ">
+                                  <div class="display-5 font-weight-bold text-center">JustJazzed</div>
+                              </a>
+                              <ul class="navbar-nav ">
+                                  <li class="nav-item w-100">
+                                      <a href="#" class="nav-link text-light pl-4">Home</a>
+                                  </li>
+                                  <li class="nav-item w-100">
+                                    <a href="#design" class="nav-link text-light pl-4">Design</a>
+                                </li>
+                                  <li class="nav-item w-100">
+                                      <a href="#service1" class="nav-link text-light pl-4">Services</a>
+                                  </li>
+                                  <li class="nav-item dropdown w-100">
+                                    <a href="#work" class="nav-link text-light pl-4">Work</a>
+                                     
+                                  </li>
+
+                                  <li class="nav-item w-100">
+                                    <a href="./../index.html" class="nav-link text-light pl-4">Profile</a>
+                                </li>
+                                  <li class="nav-item w-100">
+                                      <a href="#contact" class="nav-link text-light pl-4">Contact</a>
+                                  </li>
+                              </ul>
+                          </nav>
+                          <div class="p-4 my-container">
+                              <button class="btn my-4" id="menu-btn"><i class="fa fa-bars" aria-hidden="true"></i>
+                              </button>
+                          </div>
+                               </div>
+                             </section>
+
 
         <!-- *********************************Hero Section Main************************************ -->
         <section class="hero-main">
@@ -128,7 +167,7 @@
 
 <!-- *********************************Owl Carousel************************************ -->
 
-<div class="owl-carousel owl-theme">
+<div class="owl-carousel owl-theme" id="design">
     <div class="item"><img src="../images/WebFrame.png" alt=""></div>
     <div class="item"><img src="../images/EktoFrame.png" alt=""></div>
     <div class="item"><img src="../images/boltonframe.png" alt=""></div>
@@ -140,7 +179,7 @@
 
    <!-- *********************************Works************************************ -->
 
-   <section class="main4" >
+   <section class="main4" id="work">
 
     <div class="container p-5">
 
@@ -252,7 +291,7 @@
 
 
 </section>
-<section class="footer">
+<section class="footer" id="contact">
     <div class="footer-content">
         <footer class="w-100  flex-shrink-0" style="background-color: #06332b; " >
           <div class="container ">
@@ -308,6 +347,17 @@
                             }
                             
                         })
+               
+               
+               
+
+                        var menu_btn = document.querySelector("#menu-btn")
+      var sidebar = document.querySelector("#sidebar")
+      var container = document.querySelector(".my-container")
+      menu_btn.addEventListener("click", () => {
+          sidebar.classList.toggle("active-nav")
+          container.classList.toggle("active-cont")
+      })
                </script>
 </body>
 </html>
