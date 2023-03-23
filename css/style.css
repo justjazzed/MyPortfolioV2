@@ -272,11 +272,11 @@ width: 50%;
 .BoxSlider{
   margin: 40%;
 }
-.Carousel-btn{
+.main5 .button{
   display: inline-block;
   margin-top: 20px;
   padding: 8px 20px;
-  background: #017143;
+
   color: #000000;
   border-radius: 40px;
   font-weight: 500;
@@ -635,12 +635,12 @@ textarea {
   .BoxSlider__text p{
     display: none;
   }
-  .Carousel-btn{
+  .main5 .button{
     display: inline-block;
     margin-top: 20px;
     padding: 8px 20px;
-    background: #017143;
-    color: #fff;
+
+    color: #000000;
     border-radius: 0;
     font-weight: 300;
     letter-spacing: 0;
