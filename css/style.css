@@ -9,8 +9,6 @@ body {
   background-color: #1d283a;
   min-height: 100%;
   text-rendering: optimizeSpeed;
- 
-
 }
 
 /* ************************************Automaticaly set to list-style to none********************************* */
@@ -25,7 +23,6 @@ ul li {
   height: 100%;
   position: fixed;
   margin-left: -300px;
-
   background-color: #111d36;
   transition: 0.4s;
   z-index: 999;
@@ -120,7 +117,6 @@ ul li {
   background-color: #716455;
   color: #161f32;
 }
-
 /* ************************************hero end********************************* */
 /* ************************************nav********************************* */
 /* .nav--hidden{
@@ -459,7 +455,6 @@ textarea {
   }
   .Hero-Section__Intro h1 {
     font-size: clamp(7rem,4vw,.50rem);
-   
   }
   .Hero-Section__Intro p {
     font-size: clamp(2rem,4vw,1rem);

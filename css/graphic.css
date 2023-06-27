@@ -63,11 +63,7 @@ ul li a{
   
   
   
-  .dropdown-item:active,
-  .dropdown-item:focus,
-  .dropdown-item:hover {
-    background-color: #ffffff26;
-  }
+  
   
   .my-container {
     transition: 0.4s;
@@ -235,16 +231,17 @@ ul li a{
 
 .main4{
     width: 100%;
-    height: 100%;
+    height: 650px;
     text-align: center;
     border: 1px solid black;
     margin-top: 10%;
+    background-color: #afd3e2;
 }
 
 .textmain h1{
     font-size: 200px;
-    margin-top: 2.5%;
-    line-height: 90%;
+   
+    line-height: 100%;
 }
 .text1{
     margin-left: 10%;  
@@ -258,7 +255,7 @@ ul li a{
 /* <!-- ******************************** NFTs******************************* --> */
 .main5{
     margin-top: 5%;
-
+    
 }
 
 .nft{
@@ -419,13 +416,16 @@ ul li a{
 .mock-bot{
     margin-top: 2%;
     display: flex;
+    
 }
 
 /* <!-- ******************************** Banner Design******************************* --> */
 .main8{
     height: 90%;
     margin-top: 10%;
-    
+    border: 1px solid black;
+    padding: 5%;
+    background-color: #d5cabd;
 }
 .left-img img{
     width: 100%;
