@@ -473,6 +473,12 @@ ul li a{
 .Banner-Mobile{
     display: none;
 }
+
+.poster {
+    width: 10px;
+}
+
+
 /* <!-- ******************************** Vector portrait ******************************* --> */
 .main9{
     height: 100%;
