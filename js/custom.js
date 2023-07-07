@@ -83,6 +83,28 @@
       })
 
 
+
+      function DownloadCV() {
+        // Path to your CV file
+        var cvFilePath = './images/Resume.pdf';
+      
+        // Create a hidden <a> element
+        var link = document.createElement('a');
+        link.href = cvFilePath;
+        link.download = 'Resume.pdf';
+        link.style.display = 'none';
+      
+        // Append the link to the document body
+        document.body.appendChild(link);
+      
+        // Trigger the click event
+        link.click();
+      
+        // Clean up
+        document.body.removeChild(link);
+      }
+
+
       //**********************Disapears navbar from Logo Page*********** */
      
 
