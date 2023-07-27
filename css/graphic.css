@@ -477,13 +477,38 @@ ul li a{
 .poster {
     width: 10px;
 }
+/* <!-- ******************************** Vector portrait ******************************* --> */
 
+.main11{
+    height: 50em;
+    background-color: #afd3e2;
+    text-align: center;
+}
+.main11 h1{
+    margin-top: 2em;
+    font-weight: 800;
+}
+.figma-content{
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.figma{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.figma-design img{
+    width: 100%;
+}
 
 /* <!-- ******************************** Vector portrait ******************************* --> */
 .main9{
     height: 100%;
    margin-top: 10%;
-  
 }
 .portrait{
     margin: auto;
