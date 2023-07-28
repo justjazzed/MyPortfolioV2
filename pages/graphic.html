@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="../css/graphic.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Mukta&display=swap" rel="stylesheet">
-    
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" 
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   
 </head>
 <body>
@@ -249,22 +251,24 @@
                             </div>
                         </div>
 
-                            <div class="col-12 mock-bot">
-                            <div class="col-4 bot-img--1 ">
-                                <img src="../images/graphic/onfire mockup.png" alt="" >
-                            </div>
-                            <div class="col-4 bot-img--2 " >
-                                <img src="../images/graphic/fayaaa.png" alt="" >
-                            </div>
-                            <div class="col-4 bot-img--3" >
-                                <img src="../images/graphic/milk mockups.png" alt="" >
-                            </div>
-                            
+                       
+                
+                        
                         </div>
+                        <div class="owl-carousel owl-theme" id="design">
+                            <div class="item"><img src="../images/mock1-01.png" alt=""></div>
+                            <div class="item"><img src="../images/mock2-01.png" alt=""></div>
+                            <div class="item"><img src="../images/mock3-01.png" alt=""></div>
+                            <div class="item"><img src="../images/mock4-01.png" alt=""></div>
+                            <div class="item"><img src="../images/mock5-01.png" alt=""></div>
+                            <div class="item"><img src="../images/mock6-01.png" alt=""></div>
+                            <div class="item"><img src="../images/mock7-01.png" alt=""></div>
+                            <div class="item"><img src="../images/mock8-01.png" alt=""></div>
+                            <div class="item"><img src="../images/mock9-01.png" alt=""></div>
+                      
                         </div>
                     </div>
                  </section>
-
 
                   <!-- ******************************** Graphic Design ******************************* -->
 
@@ -276,7 +280,7 @@
                                 <img class="img2 reveal" src="../images/graphic/banner2.png" alt="">
                                 <img class="img9 reveal mt-5" src="../images/graphic/bannerUS2.png" alt="" >
                                 <img class="img5 reveal poster" style="margin-top: 2%; width: 90%;" src="../images/fasion.png" alt="" >
-                                <img class="img6 reveal poster" style="margin-top: 2%; width: 90%" src="../images/home-03.png" alt="" >
+                               
                                 <img class="img7 reveal mt-5" style="width: 100%; " src="../images/graphic/panda logo.png" alt="" >
                             </div>
                             <div class="col-6 right-img" >
@@ -290,7 +294,7 @@
                                 <img class="img3 reveal poster" src="../images/minimal.png" alt="" >
                                 <img class="img3 reveal poster" src="../images/BeeX.png" alt="" >
                                 
-                                <img class="img7 reveal mt-5" style="width: 100%; " src="../images/graphic/panda logo.png" alt="" >
+                               
                             </div>
                         </div>
                     </div>
@@ -407,8 +411,11 @@
                       </div>
                   </footer>
                    </div>
-
+                   
+            
                    <script type="text/javascript">
+                                  
+
                       // *****************SibeBar Menu***********************\\
                         var menu_btn = document.querySelector("#menu-btn")
                         var sidebar = document.querySelector("#sidebar")
@@ -451,7 +458,34 @@
               }            
               }
 
+
+                    // OWL CAROUSEl
+                    
+                                                 $('.owl-carousel').owlCarousel({
+                                                            loop:true,
+                                                            margin:10,
+                                                            nav:false,
+                                                            autoplay:true,
+                                                            autoplayTimeout:5000,
+                                                            autoplayHoverPause:true,
+                                                            stagePadding: 100,
+                                                            dots:false,
+                                                            responsive:{
+                                                                0:{
+                                                                    items:1
+                                                                },
+                                                                600:{
+                                                                    items:2
+                                                                },
+                                                                1000:{
+                                                                    items:3
+                                                                }
+                                                            }
+                                                            
+                                                        })
+           
                         </script>
+                        
                 </body>
 
 
