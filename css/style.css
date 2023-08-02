@@ -99,8 +99,8 @@ ul li {
 }
 .Hero-Section__Intro h1 {
   /* font-size: clamp(7rem,4vw,1rem);*/
-  font-weight: 700; 
-  font-size: 110px;
+  font-weight: 800; 
+  font-size: 120px;
   color: #716455;
 }
 .Hero-Section__Intro p {
@@ -140,7 +140,7 @@ ul li {
   transition:  0.5s ease-in-out;
 }
 .navbar{
-  background-color: #2A3A5E;  
+  background-color: #dbdbdb;  
   position: fixed;
   width: 100%; 
   z-index: 1;

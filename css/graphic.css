@@ -18,6 +18,58 @@ ul li a{
 }
 
 /******************************* Hero Section ***************************/
+.Hero-Section {
+    position: relative;
+    bottom: 0%;
+    height: 40%;
+  }
+  .hero-top {
+    display: flex;
+    height: 10em;
+    padding: 0;
+  }
+  .hero-top-left {
+    width: 10%;
+    background-color: #ffd4b2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-top-left img {
+    width: 50%;
+  }
+  .hero-top-right {
+    width: 90%;
+    background-color: #86c8bc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-top-right ul {
+    display: flex;
+    gap: 5em;
+  }
+  .hero-top-right ul li a {
+    text-decoration: none;
+    color: #7a316f;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .hero-bot {
+    background-color: #ceedc7;
+    height: 15em;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-bot h3 {
+    width: 80%;
+    font-family: "Oswald", sans-serif;
+  }
+  
+
+
 
 .navbar2{
     width: 250px;
@@ -146,45 +198,7 @@ ul li a{
 
 /******************************* About me ***************************/
 
-.main2{
-    height: 100%;
-    min-height: 100%;
-   margin: auto;
-   background-color: rgb(255, 255, 255);
-   overflow: hidden;
-}
-.About-Section{
-    margin: auto;
-}
 
-.About-Section  .about-image-1 img{
-    width: 350px;
-    float: inline-end;
-}
-.About-Section  .about-image-2 img{
-    width: 350px; 
-}
-.about-content-1{
-    width: 100%;
-   
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.about-content-1 h1{
-    font-size: 150px;
-}
-.about-content-2{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.about-content-2 p{
-    font-size: 40px;
-    width: 50%;
-
-}
 /* ******************************** Work Experience *******************************  */
 .main3{
     margin-top: 10%;
@@ -353,148 +367,86 @@ ul li a{
   font-size: 16px;
 }
 /* <!-- ******************************** Mock ups******************************* --> */
-.main7{
-    margin-top: 10%;
-    width: 100%;
+
+.projects-mockup {
+    margin-top: 2%;
   
-    overflow: hidden;
-}
-.mock-top{
-    display: flex;
-}
-.mock-top .bot-img img{
-    width: 130%;
-}
-.bot-img--1 img{
-    width: 60%;
-    position: relative;
-    left: 60%;
-}.bot-img--2 img{
-    width: 70%;
-    position: relative;
-    left:25%;
-}
-.bot-img--3 img{
-    width: 80%;
-}
-.mock-desc1{
-    top: 65%;
-    position: relative;
-    width: 25%;
-    left: 10%;
-}
-.mock-desc1 p{
-    font-family: 'Unna', serif;
-    font-style: italic;
-    padding: 10px;
-    width: 50%;
-    height: 35%;
-    border: 1px solid black;
-    background-color: #b39cd0;
-    font-size: 30px;
-}
-.mock-desc{
-    padding: 20px;
-    width: 20%;
-    height: 60%;
-    border: 1px solid black;
-    background-color: #ffc75f;
+  }
+
+.main-content{
     display: flex;
     flex-direction: column;
-}
-.mock-top h1{
-    font-size: 80px;
-}
-.mock-top .mock-desc p{
-    font-size: 20px;
-}
-.mock-top h1 span{
-    font-family: 'Unna', serif;
-    font-style: italic;
-    
-}
-.mock-bot{
-    margin-top: 2%;
+    column-gap: 50px;
+    text-align: center;
+  }
+  .card{
+    height: 110%;
+    width: 100%;
+    border: none;
+    border-radius: 0;
     display: flex;
-    
-}
-/****************************************** Owl Carousel ********************************/
-.owl-carousel img{
-    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
   }
-  .owl-carousel img{
-    cursor: pointer;
-    transition: 0.5s ease;
+  .card hr{
+    border: 2px solid #000000;
+    color: #000000;
   }
-  .owl-carousel img:hover{
-    transform: translateY(-10px);
-    transition: 0.5s ease;
-    z-index: 999;
+  .hover-card .card-color:nth-child(1):hover{
+    background-color: #F1C27B;
+  }
+  .hover-card .card-color:nth-child(3):hover{
+    background-color: #FDE5EC;
+  }
+  .hover-card .card-color:nth-child(4):hover{
+    background-color: #FCBAAD;
+  }
+  .hover-card .card-color:nth-child(5):hover{
+    background-color: #E48586;
+  }
+  .hover-card .card-color:nth-child(6):hover{
+    background-color: #916DB3;
+  }
+  .card img{
+    width: 90%;
+    object-fit: cover;
   }
   
-  .owl-carousel{
-    height: 50vh;
-    margin-top: 10em;
+  .mockup-content .word-text{
+    margin-left: 0;
+  }
+  .card-body h5{
+    font-size: 50px;
+  }
+  .card-body p{
+    font-size: 30px;
+  }
+  .mock-desc {
+    background-color: #ffc8bd;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid black;
+  }
+  .mock-desc h1 {
+    font-size: 5em;
+    font-weight: 500;
+  }
+  .mock-desc h1 span {
+    font-style: italic;
+  }
+  .mock-desc p {
+    font-size: 20px;
   }
 
 /* <!-- ******************************** Banner Design******************************* --> */
-.main8{
-    height: 90%;
-    margin-top: 10%;
-    border: 1px solid black;
-    padding: 5%;
-    background-color: #d5cabd;
-}
-.left-img img{
-    width: 100%;
-    display: block ;
-}
-.right-img{
-    padding-left: 5%;
-}
-.right-img .main8-desc{
-    padding: 20px;
-    width: 50%;
-    height: auto;
-    border: 1px solid black;
-    background-color: #008f7a;
-    display: flex;
-    flex-direction: column;
-    
-}
-.right-img .main8-desc h1 span{
-    font-family: 'Unna', serif;
-    font-style: italic;
-}
-.right-img .main8-desc h1 {
-    font-size: clamp(3.5rem,3vw,1rem);
-}
-.right-img .img3{
-    width: 100%;
-    margin-top: 5%;
-}
 
-
-.right-img img{
-    
-    display: block ;
-}
-.left-img .img3{
-    display: none;
- 
-}
-.left-img .img2{
-    width: 70%;
-    margin-top: 5%;
-    margin-left: 26%;
-}
-.Banner-Mobile{
-    display: none;
-}
-
-.poster {
-    width: 10px;
-}
 /* <!-- ******************************** Vector portrait ******************************* --> */
 
 .main11{
@@ -697,54 +649,7 @@ ul li a{
 
 /* ****************************************About Section**************************************/
 
-@media only screen and (max-width:991px) and (min-width:300px){
-   
-    
-    .about-content-2{
-        justify-content: none;
-        background-color: #007664;
-        border: 1px solid black;
-    }
-    .about-content-2 p{
-        font-size: clamp(1rem,4vw,2rem);
-        width: 90%;
-        color: aliceblue;
-        margin-top: 2%;
-    }
-    .about-content-1 h1{
-        font-size: 100px;
-        text-align: center;
-    }
 
-    
-   
-}
-@media only screen and (max-width:800px) and (min-width:300px){
-    
-    .about-content-2{
-        text-align: center;
-        display: block;
-        padding: 20px;
-       
-    }
-    .about-content-2 p{
-        font-size: clamp(1rem,4vw,5rem);
-      
-        margin: auto;
-    }
-    .About-Section  .about-image-2 img{
-        width: 90%; 
-        margin-top: 2%;
-    }
-    .About-Section  .about-image-1 img{
-        width: 90%; 
-    }
-    @media only screen and (max-width:500px){
-        .About-Section  .about-image-1 img{
-            display: none;
-        }
-    }
-}
 
 /* ****************************************About Section end**************************************/
 
@@ -897,173 +802,16 @@ ul li a{
 
 /* ****************************************Mock up**************************************/
 
-@media only screen and (max-width:1800px) and (min-width:300px){
-   
-    .mock-desc1{
-        top: 0%;
-    }
-    .mock-desc1 p{
-        width:70%;
-        height: auto;
-        font-size: clamp(1rem,4vw,2rem);
-    }
-    .mock-desc{
-        height: auto;
-    }
-    .mock-top h1{
-        font-size: clamp(3.2rem,10vw,1rem);
-    }
-    .mock-top .mock-desc p{
-        font-size: clamp(1.6rem,4vh,1rem);
-    }
- 
-}
-@media only screen and (max-width:992px) and (min-width:300px){
-   
-   .mock-top{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
 
-   }
-   .mock-desc1{
-    margin-right: 20%;
-    width: 40%;
-}
-    .mock-desc1 p{
-        height: auto;
-        width: auto;
-        justify-content: center;
-        text-align: center;
-    }
-    .mock-desc{
-        width: 40%;
-    }
-   
-}
-@media only screen and (max-width:767px) and (min-width:300px){
-    .mock-desc1{
-        margin-right: 20%;
-        width: 40%;
-    }
-        .mock-desc1 p{
-            height: auto;
-            width: auto;
-            justify-content: center;
-            text-align: center;
-        }
-        .mock-desc{
-            text-align: center;
-            width: 80%;
-           
-        }
-        .mock-top .bot-img img{
-            width: 200%;
-        }
-        .bot-img--1 img{
-            width: 100%;
-            position: relative;
-            left: 2%;
-        }.bot-img--2 img{
-            width: 100%;
-            position: relative;
-            left:2%;
-        }
-        .bot-img--3 img{
-            width: 70%;
-            margin-right: 10%;
-        }
-        .mock-bot{
-           gap: 20px;
-        }
-        
-}
 
 /* ****************************************Mock up end**************************************/
 
 
 /* ****************************************Banner Ads**************************************/
-@media only screen and (max-width:992px) and (min-width:300px){
-    .right-img .main8-desc h1 {
-        font-size: clamp(3rem,3vw,1rem);
-    }
-    .right-img .main8-desc p {
-        font-size: clamp(1rem,3vw,1rem);
-    }
-    .right-img .main8-desc{
-        padding: 20px;
-        width: auto;
-        height: auto;  
-    }
-    .right-img .img3{
-        
-        margin-top: 5%;
-    }
-    .left-img .img1{
-        margin-top: 10%;
-        margin-left: 10%;
-    }
-    
-   
-    .left-img .img2{
-        width:100%;
-        margin-top: 5%;
-        margin-left: 10%;
-    }
-}
-@media only screen and (max-width:600px) and (min-width:300px){
-    .right-img .main8-desc h1 {
-        font-size: clamp(2rem,3vw,1rem);
-    }
-    .right-img .main8-desc p {
-        font-size: clamp(1rem,1vw,1rem);
-    }
-  
-    .right-img .img3{
-        width: 100%;
-        margin-top: 5%;
-    }
-    .right-img .img1{
-        width: 100%;
-        margin-top: 30%;
-    }
-    
-    .right-img img{
-        display: none ;
-    }
-   
-    .left-img .img2{
-        width:100%;
-        margin-top: 5%;
-       
-    }
-   
-   
-}
-@media only screen and (max-width:500px) and (min-width:300px){
-    .main8 .row{
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .right-img{
-        width: auto;
-        margin-left: -2%;
-    }
-    .left-img{
-        margin-top: -5%;
-        width:90%;
-        margin-left: -18%;
-    }
-}
+
 
 /* ****************************************Banner Ads ends**************************************/
 
-@media only screen and (max-width:992px)and (min-width:350px){
-    .owl-carousel{
-      margin-top: 5em;
-    }
-    }
 
 /* ****************************************Vector Portraits**************************************/
 
