@@ -6,7 +6,7 @@
 }
 body {
   height: 100%;
-  background-color: #1d283a;
+  background-color: #0a1112;
   min-height: 100%;
   text-rendering: optimizeSpeed;
 }
@@ -15,6 +15,7 @@ body {
 ul li {
   list-style: none;
 }
+
       /* ************************************Navbar********************************* */
 
 
@@ -83,38 +84,49 @@ ul li {
 
 /* ************************************hero********************************* */
 .main{
-  background: url(../images/WebBGnew-01.png);
+  background-image: url(../images/wavylineBGC-01.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   min-height: 100%;
   min-width: 100%;
 }
 .Hero-Section{
   min-height: 100vh;
   height: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  text-align: center;
+
+ 
+}
+.Hero-Section__image{
+
+ justify-content: end;
+ display: flex;
 }
 .Hero-Section__image img{
   width: 70%;
-  border-radius: 50%;
+
 }
 .Hero-Section__Intro h1 {
   /* font-size: clamp(7rem,4vw,1rem);*/
   font-weight: 800; 
-  font-size: 120px;
-  color: #716455;
+  font-size: 130px;
+  color: #00eb86;
 }
 .Hero-Section__Intro p {
   /* font-size: clamp(2rem,4vw,1rem); */
   font-size: 50px;
-  color: #716455;
+  color: #00eb86;
 }
 .main h5 {
-  color: #716455;
+  color: #16c494;
 }
 .Hero-Section__Intro .primary-btn {
   border-radius: 30px;
   font-weight: bold;
-  background-color: #716455;
+  border: none;
+  background-color: #00eb86;
   color: #161f32;
 }
 /* ************************************hero end********************************* */
@@ -140,7 +152,7 @@ ul li {
   transition:  0.5s ease-in-out;
 }
 .navbar{
-  background-color: #dbdbdb;  
+  background-color: #0a1112;
   position: fixed;
   width: 100%; 
   z-index: 1;
@@ -162,12 +174,12 @@ ul li {
 /* ************************************about********************************* */
 
 .About-Section__1{
-  padding-top: 15%;
- 
+  padding-top: 5%;
+  text-align: justify;
 }
 .About-Section{
   height: 100%;
-  background-color: #161f32;
+  
   align-items: center;
   border-radius: 10px;
   padding: 20px;
@@ -183,9 +195,10 @@ ul li {
   width: 20%;
 }
 .About-Section__Content p{
-  color: #fff;
+  color: #00eb86;
   font-size: 35px;
   width: 50%;
+ 
 }
 
 /* ************************************about end********************************* */
@@ -194,7 +207,7 @@ ul li {
 
 /****************************** Services *******************************/
 .main3{
- 
+  background-image: url(../images/wavylineBGC-02-01.png);
   padding-top: 5%;
   min-height: 100%;
 
@@ -209,20 +222,21 @@ display: block;
 margin: auto;
 }
 .main3 .cardmain .card img {
-width: 50%;
+  margin-top: 5px;
+width: 45%;
 }
 .main3 .cardmain .card {
-  color: #00f7ff;
+  color: #00eb86;
 }
 .main3 .cardmain .shadow {
   width: 90%;
   background-color: transparent;
-  border: 1px solid cyan;
+  border: 1px solid #00eb86;
 }
 .background-block{
   width: 100%; 
   height: 30vh; 
-  background-color: #161F32; 
+
   position: relative; 
   margin-top: -10%;
   z-index: -1;
@@ -285,6 +299,7 @@ width: 50%;
 /* ************************************Skill Info********************************* */
 .main4 {
   color: rgb(19, 100, 172);
+
 }
 .main4 .container {
   height: 180vh;
@@ -300,9 +315,11 @@ width: 50%;
   margin-top: -55px;
   margin-left: 3em;
   font-weight: 700;
+  color: #16c494;
 }
 
 .tools-main {
+  background-image: url(../images/wavylineBGC-04-01-01-01.png);
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -311,15 +328,16 @@ width: 50%;
   text-align: center;
 }
 .map_box {
-  background-color: #161f32;
+
   padding: 12px;
-  border-radius: 20px;
+  border: 1px solid #00eb86;
   text-align: center;
   display: flex;
   align-items: center;
 }
 .map_box p{
  margin-left: 5%;
+ color: #00eb86;
 }
 .map_box img{
   width: 100px;
@@ -345,12 +363,12 @@ width: 50%;
   -moz-box-shadow: 10px 9px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .left {
-  background: #161f32;
+  background: #00eb86;
   padding: 210px 125px;
 }
 .left h2 {
   font-family: poppins;
-  color: #fff;
+  color: #0a1112;
   font-weight: 700;
   font-size: 48px;
   font-family: "Mukta", sans-serif;
@@ -373,11 +391,11 @@ width: 50%;
   color: #ffffff00;
 }
 .form-control {
-  border: 1px solid #ffffff;
+  border: 1px solid #0a1112;
   background-color: transparent;
 }
 .right button {
-  border: 1px solid white;
+  border: 1px solid #00eb86;
   border-radius: 10px;
   background: transparent;
   width: 150px;
@@ -390,26 +408,31 @@ width: 50%;
 }
 .right button:hover {
   transition: 0.5s ease;
-  background-color: #00f7ff;
+  background-color: #16c494;
 }
 
 .social-links {
   display: flex;
   gap: 25px;
   justify-content: center;
+
+}
+.social-links .btn{
+border: 1px solid black;
+
 }
 .social-links i {
-  color: #00f7ff;
+  color: #0a1112;
 }
 
 .contacts {
   color: #ffffff;
 }
 .right input,textarea{
-  color: cyan;
+  color: #00eb86;
 }
 textarea {
-  color: cyan;
+  color: #00eb86;
     }
 .footer-content{
   margin-top: 5%;
@@ -420,7 +443,7 @@ textarea {
 .footer-content{
   justify-content: center;
   width: 100%;
-  background-color: #161f32;
+  background-color: #00eb86;
 
 }
              /***********************************footer******************************** */
@@ -441,20 +464,51 @@ textarea {
 
 /* ------------------------------------------------Hero Section-------------------------------------- */
 
-@media only screen and (max-width:991px)and (min-width:375px){
+@media only screen and (max-width:1300px)and (min-width:300px){
+  .Hero-Section__image img{
+    width: 70%;
+   
+  }
+  
+  .Hero-Section__Intro h1 {
+    font-size: clamp(7rem,4vw,.50rem);
+  }
+  .Hero-Section__Intro p {
+    font-size: clamp(2rem,4vw,1rem);
+    /* font-size: 50px; */
+    color: #716455;
+  }
+}
+
+@media only screen and (max-width:991px)and (min-width:300px){
   .Hero-Section{
     margin-top: -15%;
     min-height: 100%;
     height: 100%;
     padding-top: 20%;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   gap: 50px;
   }
   .Hero-Section__image img{
-    width: 50%;
-    border-radius: 50%;
+    width: 70%;
+    
+  }
+  .Hero-Section__image{
+    display: flex;
+    justify-content: center;
+  }
+  .Hero-Section__Intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .Hero-Section__Intro h1 {
-    font-size: clamp(7rem,4vw,.50rem);
+    text-align: center;
+    font-size: clamp(9rem,4vw,.50rem);
   }
   .Hero-Section__Intro p {
     font-size: clamp(2rem,4vw,1rem);
@@ -464,8 +518,22 @@ textarea {
   .main h5 {
     color: #716455;
   }
-
-  @media only screen and (max-width:767px)and (min-width:545px){
+  @media only screen and (max-width:650px)and (min-width:300px){
+      .Hero-Section__image img{
+    width: 70%;
+   
+  }
+  
+  .Hero-Section__Intro h1 {
+    font-size: clamp(7rem,4vw,.50rem);
+  }
+  .Hero-Section__Intro p {
+    font-size: clamp(2rem,4vw,1rem);
+    /* font-size: 50px; */
+    color: #716455;
+  }
+  }
+  @media only screen and (max-width:767px)and (min-width:300px){
     .Hero-Section{
       padding-top: 30%;
     }
@@ -478,19 +546,45 @@ textarea {
     text-align: center;
   }
   .Hero-Section__Intro h1 {
+    font-size: clamp(6rem,4vw,1rem);
+    font-weight: 800; 
+    /* font-size: 110px; */
+  
+  }
+  .Hero-Section__Intro p {
+    /* font-size: clamp(2rem,4vw,1rem); */
+    font-size: 30px;
+    
+  }
+  
+}
+@media only screen and (max-width:410px)and (min-width:300px){
+  .Hero-Section{
+  
+    text-align: center;
+  }
+  .Hero-Section__Intro h1 {
     font-size: clamp(5rem,4vw,1rem);
+    font-weight: 800; 
+    /* font-size: 110px; */
+  
+  }
+  .Hero-Section__Intro p {
+    /* font-size: clamp(2rem,4vw,1rem); */
+    font-size: 25px;
+
+  }
+  
+}
+@media only screen and (max-width:370px)and (min-width:300px){
+ 
+  .Hero-Section__Intro h1 {
+    font-size: clamp(4.5rem,4vw,1rem);
     font-weight: 800; 
     /* font-size: 110px; */
     color: #716455;
   }
-  .Hero-Section__Intro p {
-    /* font-size: clamp(2rem,4vw,1rem); */
-    font-size: 50px;
-    color: #716455;
-  }
-  .main h5 {
-    color: #716455;
-  }
+ 
 }
 
 
@@ -500,7 +594,7 @@ textarea {
 /* ------------------------------------------------About Me-------------------------------------- */
 @media only screen and (max-width:991px) and (min-width:767px){
   .About-Section__Content p{
-    color: #fff;
+   
     font-size: clamp(1.5rem,4vw,1rem);
   }
   .About-Section{
@@ -518,7 +612,7 @@ textarea {
     height:auto;
   }
   .About-Section__Content p{
-    color: #fff;
+   
     font-size: clamp(1rem,4vw,.1rem);
   }
  .map_box{
@@ -541,7 +635,7 @@ textarea {
     width: 45%;
   }
   .About-Section__Content p{
-    color: #fff;
+  
     font-size: 25px;
     width: auto;
   }
