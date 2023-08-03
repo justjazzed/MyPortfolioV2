@@ -85,7 +85,7 @@ ul li a{
   .navbar-nav{
     display: block;
     text-align: center;
-    
+
   }
   .navbar-nav li a{
     color: #2f4858;
@@ -98,6 +98,7 @@ ul li a{
   .nav-links{
     transition: all .4s;
     opacity: 0;
+    position: absolute;
   }
   .nav-links.to-top.active {
     pointer-events: auto;
@@ -439,6 +440,9 @@ ul li a{
   }
   .hover-card .card-color:nth-child(17):hover{
     background-color: #FDE5EC;
+  }
+  .hover-card .card-color:nth-child(18):hover{
+    background-color: #F1C27B;
   }
   .card img{
     width: 90%;
