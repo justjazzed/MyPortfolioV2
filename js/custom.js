@@ -86,7 +86,7 @@
 
       function DownloadCV() {
         // Path to your CV file
-        var cvFilePath = './images/Resume.pdf';
+        var cvFilePath = './images/Legaspina,Jasbar Resume.pdf';
       
         // Create a hidden <a> element
         var link = document.createElement('a');
