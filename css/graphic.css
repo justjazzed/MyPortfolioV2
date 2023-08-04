@@ -421,7 +421,7 @@ ul li a{
     background-color: #E48586;
   }
   .hover-card .card-color:nth-child(11):hover{
-   background-color: #F1C27B;
+   background-color: #1A5D1A;
   } 
   .hover-card .card-color:nth-child(12):hover{
     background-color: #FDE5EC;
@@ -436,13 +436,38 @@ ul li a{
     background-color: #F1C27B;
   }
   .hover-card .card-color:nth-child(16):hover{
-    background-color: #916DB3;
+    background-color:#1A5D1A;
   }
   .hover-card .card-color:nth-child(17):hover{
     background-color: #FDE5EC;
   }
   .hover-card .card-color:nth-child(18):hover{
     background-color: #F1C27B;
+  }
+  .hover-card .card-color:nth-child(19):hover{
+    background-color: #916DB3;
+  }
+  .hover-card .card-color:nth-child(20):hover{
+    background-color: #1A5D1A;
+  }
+  .hover-card .card-color:nth-child(21):hover{
+    background-color: #1A5D1A;
+  }
+  .hover-card .card-color:nth-child(22):hover{
+    background-color: #FDE5EC;
+  }
+  .hover-card .card-color:nth-child(23):hover{
+    background-color: #FCBAAD;
+  }
+ 
+  .hover-card .card-color:nth-child(25):hover{
+    background-color: #F1C27B;
+  }
+  .hover-card .card-color:nth-child(26):hover{
+    background-color: #1A5D1A;
+  }
+  .hover-card .card-color:nth-child(27):hover{
+    background-color: #FDE5EC;
   }
   .card img{
     width: 90%;
