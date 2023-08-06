@@ -299,7 +299,7 @@ width: 45%;
 /* ************************************Skill Info********************************* */
 .main4 {
   color: rgb(19, 100, 172);
-
+ 
 }
 .main4 .container {
   height: 180vh;
@@ -323,15 +323,18 @@ width: 45%;
   width: 100%;
   background-position: center;
   background-size: cover;
+  
+}
+.map_box p{
+  text-align: justify;
 }
 .headding {
   text-align: center;
 }
 .map_box {
-
   padding: 12px;
   border: 1px solid #00eb86;
-  text-align: center;
+ 
   display: flex;
   align-items: center;
 }
@@ -363,7 +366,7 @@ width: 45%;
   -moz-box-shadow: 10px 9px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .left {
-  background: #00eb86;
+  background: #16c494;
   padding: 210px 125px;
 }
 .left h2 {
@@ -391,11 +394,11 @@ width: 45%;
   color: #ffffff00;
 }
 .form-control {
-  border: 1px solid #00eb86;
+  border: 1px solid #16c494;
   background-color: transparent;
 }
 .right button {
-  border: 1px solid #00eb86;
+  border: 1px solid #16c494;
   border-radius: 10px;
   background: transparent;
   width: 150px;
@@ -429,10 +432,10 @@ border: 1px solid black;
   color: #ffffff;
 }
 .right input,textarea{
-  color: #00eb86;
+  color: #16c494;
 }
 textarea {
-  color: #00eb86;
+  color: #16c494;
     }
 .footer-content{
   margin-top: 5%;
@@ -466,6 +469,7 @@ textarea {
 
 .testimonial {
 	padding: 80px 0;
+  text-align: justify;
 }
 .sec-heading {
 	margin-bottom: 60px;
@@ -499,6 +503,7 @@ textarea {
 }
 .single-box p {
 	font-weight: 400;
+  text-align: justify;
 }
 .single-box h6 {
 	font-weight: 600;
