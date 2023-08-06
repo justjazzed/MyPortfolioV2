@@ -1,13 +1,13 @@
 
+
         
-        
-        function imgSlider(anything){
-            document.querySelector('.Starbucks').src = anything;
-        }
-        function changeCircleColor(color){
-            const circle = document.querySelector('.circle')
-            circle.style.background = color;
-        }
+        // function imgSlider(anything){
+        //     document.querySelector('.Starbucks').src = anything;
+        // }
+        // function changeCircleColor(color){
+        //     const circle = document.querySelector('.circle')
+        //     circle.style.background = color;
+        // }
 
 
               // *********************************Fade in scroll****************************************
@@ -104,6 +104,7 @@
         document.body.removeChild(link);
       }
 
+     
 
       //**********************Disapears navbar from Logo Page*********** */
      
