@@ -443,7 +443,7 @@ textarea {
 .footer-content{
   justify-content: center;
   width: 100%;
-  background-color: #00eb86;
+  background-color: #16c494;
 
 }
              /***********************************footer******************************** */
@@ -476,11 +476,13 @@ textarea {
   color: #16c494;
 	font-size: 80px;
 }
-.single-box {
-	border: 3px solid #e6f0fa;
+.single-box{
 	padding: 50px 30px 40px;
 	border-radius: 20px;
-	background: #fff;
+
+}
+.owl-carousel .box-color{
+  background-color: #16c494;
 }
 .img-area {
 	margin: 45px 0 20px;
@@ -493,8 +495,10 @@ textarea {
 .single-box h4 {
 	font-weight: 600;
 	margin: 0;
-	font-family: 'Allura', cursive;
 	font-size: 35px;
+}
+.single-box p {
+	font-weight: 400;
 }
 .single-box h6 {
 	font-weight: 600;
