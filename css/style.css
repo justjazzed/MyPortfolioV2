@@ -96,8 +96,16 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#typing-text::after {
+  content: "|"; /* Display the cursor */
+  animation: blink 0.7s infinite; /* Animate the cursor */
+}
 
- 
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 .Hero-Section__image{
 

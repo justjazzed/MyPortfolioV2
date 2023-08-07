@@ -106,7 +106,63 @@
 
      
 
-      //**********************Disapears navbar from Logo Page*********** */
+      //**********************LOOPING TEXT*********** */
+      document.addEventListener("DOMContentLoaded", function() {
+        const textSequence = [
+          "Thank You!",
+          "Please feel free to Explore",
+        ];
+        const typingSpeed = 100; // Adjust the speed (in milliseconds) to control the typing speed.
+        const eraseSpeed = 50; // Adjust the speed (in milliseconds) to control the erasing speed.
+        const pauseBeforeErase = 2000; // Adjust the pause duration (in milliseconds) before erasing the text.
+        const pauseBeforeChange = 1000; // Adjust the pause duration (in milliseconds) before changing to the next text.
+      
+        let textContainer = document.querySelector(".typing-text");
+        let cursorContainer = document.createElement("span");
+        cursorContainer.className = "typing-cursor";
+        textContainer.appendChild(cursorContainer);
+      
+        let sequenceIndex = 0;
+      
+        function typeText(text, index, callback) {
+          if (index < text.length) {
+            textContainer.textContent += text.charAt(index);
+            setTimeout(function() {
+              typeText(text, index + 1, callback);
+            }, typingSpeed);
+          } else {
+            setTimeout(callback, pauseBeforeChange);
+          }
+        }
+      
+        function eraseText(index, callback) {
+          let currentText = textContainer.textContent;
+          if (index >= 0) {
+            textContainer.textContent = currentText.substring(0, index);
+            setTimeout(function() {
+              eraseText(index - 1, callback);
+            }, eraseSpeed);
+          } else {
+            setTimeout(callback, pauseBeforeChange);
+          }
+        }
+      
+        function changeText() {
+          cursorContainer.style.display = "none"; // Hide the cursor
+          setTimeout(function() {
+            eraseText(textContainer.textContent.length - 1, function() {
+              cursorContainer.style.display = "inline-block"; // Show the cursor
+              sequenceIndex = (sequenceIndex + 1) % textSequence.length; // Move to the next text in the sequence
+              let currentText = textSequence[sequenceIndex];
+              typeText(currentText, 0, changeText);
+            });
+          }, pauseBeforeErase);
+        }
+      
+        changeText();
+      });
+      
+
      
 
       
