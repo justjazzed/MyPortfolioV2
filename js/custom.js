@@ -109,8 +109,9 @@
       //**********************LOOPING TEXT*********** */
       document.addEventListener("DOMContentLoaded", function() {
         const textSequence = [
-          "Thank You!",
-          "Please feel free to Explore",
+          "Graphics and Web Designer",
+          "Feel free to Explore.",
+          "Thank you!",
         ];
         const typingSpeed = 100; // Adjust the speed (in milliseconds) to control the typing speed.
         const eraseSpeed = 50; // Adjust the speed (in milliseconds) to control the erasing speed.
