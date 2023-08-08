@@ -475,6 +475,9 @@ ul li a{
   .hover-card .card-color:nth-child(29):hover{
     background-color: #FCBAAD;
   }
+  .hover-card .card-color:nth-child(30):hover{
+    background-color: #F1C27B;
+  }
   .card img{
     width: 90%;
     object-fit: cover;
