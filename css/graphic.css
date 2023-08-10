@@ -8,6 +8,11 @@
 body{
     height: 100%;
     min-height: 100%;
+    background-image: url(../images/graphicBGC-01.png);
+    background-position: center;
+    background-attachment: fixed;
+  background-repeat: no-repeat;
+    
 }
 
 ul li{
@@ -22,6 +27,7 @@ ul li a{
     position: relative;
     bottom: 0%;
     height: 40%;
+    overflow: hidden;
   }
   .hero-top {
     display: flex;
@@ -66,6 +72,7 @@ ul li a{
   .hero-bot h3 {
     width: 80%;
     font-family: "Oswald", sans-serif;
+    text-align: justify;
   }
   
 
@@ -267,42 +274,8 @@ ul li a{
     margin-left: -10%;
 }
 
-/* <!-- ******************************** NFTs******************************* --> */
-.main5{
-    margin-top: 5%;
-    
-}
 
-.nft{
-    display: flex;
-    flex-direction: column;
-}
-.nft img{
-    width: 500px;
-}
 
-.item5-content{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
- 
-}
-.description{
-    padding: 20px;
-    text-align: center;
-    width: 30%;
-    border: 1px solid black;
-    background-color: #d65db1;
-   
-}
-.description h1{
-    font-size: 100px;
-}
-.description p{
-    font-size: 1em;
-}
 
 /* <!-- ******************************** Logos******************************* --> */
 .main6{
@@ -371,7 +344,7 @@ ul li a{
 
 .projects-mockup {
     margin-top: 2%;
-  
+    overflow: hidden;
   }
 
 .main-content{
@@ -380,8 +353,23 @@ ul li a{
     column-gap: 50px;
     text-align: center;
   }
+  .projects-mockup-title h1 {
+    font-size: 70px;
+  }
+  .projects-mockup-title
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .projects-mockup-title p
+  {
+    font-size: 20px;
+  }
   .card{
-    height: 110%;
+    height: 100%;
     width: 100%;
     border: none;
     border-radius: 0;
@@ -391,128 +379,24 @@ ul li a{
     align-items: center;
     background-color: rgba(255, 255, 255, 0);
   }
-  .card hr{
-    border: 2px solid #000000;
+.card hr{
+    border: 1px solid #000000;
     color: #000000;
   }
-  .hover-card .card-color:nth-child(1):hover{
-    background-color: #F1C27B;
-  }
-  .hover-card .card-color:nth-child(3):hover{
-    background-color: #FDE5EC;
-  }
-  .hover-card .card-color:nth-child(4):hover{
-    background-color: #FCBAAD;
-  }
-  .hover-card .card-color:nth-child(5):hover{
-    background-color: #E48586;
-  }
-  .hover-card .card-color:nth-child(6):hover{
-    background-color: #916DB3;
-  }
   
-  .hover-card .card-color:nth-child(8):hover{
-    background-color: #FDE5EC;
-  }
-  .hover-card .card-color:nth-child(9):hover{
-    background-color: #FCBAAD;
-  }
-  .hover-card .card-color:nth-child(10):hover{
-    background-color: #E48586;
-  }
-  .hover-card .card-color:nth-child(11):hover{
-   background-color: #1A5D1A;
-  } 
-  .hover-card .card-color:nth-child(12):hover{
-    background-color: #FDE5EC;
-  }
-  .hover-card .card-color:nth-child(13):hover{
-    background-color: #FCBAAD;
-  }
-  .hover-card .card-color:nth-child(14):hover{
-    background-color: #E48586;
-  }
-  .hover-card .card-color:nth-child(15):hover{
-    background-color: #F1C27B;
-  }
-  .hover-card .card-color:nth-child(16):hover{
-    background-color:#FCBAAD;
-  }
-  .hover-card .card-color:nth-child(17):hover{
-    background-color: #FDE5EC;
-  }
-  .hover-card .card-color:nth-child(18):hover{
-    background-color: #F1C27B;
-  }
-  .hover-card .card-color:nth-child(19):hover{
-    background-color: #916DB3;
-  }
-  .hover-card .card-color:nth-child(20):hover{
-    background-color: #1A5D1A;
-  }
-  .hover-card .card-color:nth-child(21):hover{
-    background-color:#FCBAAD;
-  }
-  .hover-card .card-color:nth-child(22):hover{
-    background-color: #FDE5EC;
-  }
-  .hover-card .card-color:nth-child(23):hover{
-    background-color: #FCBAAD;
-  }
- 
-  .hover-card .card-color:nth-child(25):hover{
-    background-color: #F1C27B;
-  }
-  .hover-card .card-color:nth-child(26):hover{
-    background-color: #1A5D1A;
-  }
-  .hover-card .card-color:nth-child(27):hover{
-    background-color: #FDE5EC;
-  }
-  .hover-card .card-color:nth-child(28):hover{
-    background-color: #916DB3;
-  }
-  .hover-card .card-color:nth-child(29):hover{
-    background-color: #FCBAAD;
-  }
-  .hover-card .card-color:nth-child(30):hover{
-    background-color: #F1C27B;
-  }
   .card img{
-    width: 90%;
+    width: 100%;
     object-fit: cover;
   }
   
-  .mockup-content .word-text{
-    margin-left: 0;
-  }
+ 
   .card-body h5{
     font-size: 50px;
   }
   .card-body p{
     font-size: 30px;
   }
-  .mock-desc {
-    background-color: #ffc8bd;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    border: 1px solid black;
-  }
-  .mock-desc h1 {
-    font-size: 7em;
-    font-weight: 500;
-  }
-  .mock-desc h1 span {
-    font-style: italic;
-  }
-  .mock-desc p {
-    font-size: 40px;
-  }
+  
 
 
 /* <!-- ******************************** Banner Design******************************* --> */
@@ -714,6 +598,17 @@ ul li a{
   
        }
 }
+@media only screen and (max-width:550px)and (min-width:300px){
+  .hero-bot h3{
+    font-size: 20px;
+  }
+     }
+  @media only screen and (max-width:350px)and (min-width:300px){
+      .hero-bot h3{
+        font-size: 17px;
+      }
+         }
+
 
 /* ****************************************Hero Section End **************************************/
 
@@ -805,24 +700,7 @@ ul li a{
 /* ****************************************Destined to Design end**************************************/
 
 /* ****************************************NFTs**************************************/
-@media only screen and (max-width:1090px)and (min-width:300px){
-    .item5-content{
-    display: inline-block;
-    }
-    .description{
-        padding: 20px;
-        text-align: center;
-        width: auto;
-        height:auto;
-        border: 1px solid black;
-    }
-    .nft{
-        padding-left: 2%;
-        display: flex;
-        flex-direction: row;
-    }
-   
-}
+
 /* ****************************************LOGOS**************************************/
 @media only screen and (max-width:1199px) and (min-width:300px){
  
@@ -899,6 +777,17 @@ ul li a{
       text-align: left;
     }
 }
+@media only screen and (max-width:992px) and (min-width:300px){
+
+    .card-body h5 {
+   
+    font-size: 20px;
+  }
+    .card-body p {
+    font-size: 15px;
+ 
+  }
+}
 @media only screen and (max-width:860px) and (min-width:300px){
     
     .mock-desc h1 {
@@ -906,18 +795,34 @@ ul li a{
       font-weight: 700;
     }
     
-    .mock-desc p {
-        text-align: left;
-      font-size: 25px;
-    }
+    .card-body h5 {
+   
+    font-size: 20px;
+  }
+  .card-body p {
+    font-size: 15px;
+    display: none;
+  }
+  .card{
+    height: 110;
+    width: 110%;
+  
+  }
+}
+@media only screen and (max-width:580px) and (min-width:300px){
+    
+  .card{
+    height: 100;
+    width: 100%;
+  
+  }
+  .card-body a {
+    font-size: 10px;
+  }
+
 }
 /* ****************************************Mock up end**************************************/
 
-
-/* ****************************************Banner Ads**************************************/
-
-
-/* ****************************************Banner Ads ends**************************************/
 
 
 /* ****************************************Vector Portraits**************************************/
