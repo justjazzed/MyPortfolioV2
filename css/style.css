@@ -648,7 +648,7 @@ textarea {
   }
   .Hero-Section__Intro h1 {
     text-align: center;
-    font-size: clamp(9rem,4vw,.50rem);
+    font-size: clamp(8rem,4vw,.50rem);
   }
   .Hero-Section__Intro p {
     font-size: clamp(2rem,4vw,1rem);
@@ -663,7 +663,7 @@ textarea {
   }
   
   .Hero-Section__Intro h1 {
-    font-size: clamp(7rem,4vw,.50rem);
+    font-size: clamp(6rem,4vw,.50rem);
   }
   .Hero-Section__Intro p {
     font-size: clamp(2rem,4vw,1rem);
@@ -684,7 +684,7 @@ textarea {
     text-align: center;
   }
   .Hero-Section__Intro h1 {
-    font-size: clamp(6rem,4vw,1rem);
+    font-size: clamp(5rem,4vw,1rem);
     font-weight: 800; 
     /* font-size: 110px; */
   
@@ -702,7 +702,7 @@ textarea {
     text-align: center;
   }
   .Hero-Section__Intro h1 {
-    font-size: clamp(5rem,4vw,1rem);
+    font-size: clamp(4rem,4vw,1rem);
     font-weight: 800; 
     /* font-size: 110px; */
   
@@ -717,7 +717,7 @@ textarea {
 @media only screen and (max-width:370px)and (min-width:300px){
  
   .Hero-Section__Intro h1 {
-    font-size: clamp(4.5rem,4vw,1rem);
+    font-size: clamp(3.5rem,4vw,1rem);
     font-weight: 800; 
     /* font-size: 110px; */
   
