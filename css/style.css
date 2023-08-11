@@ -6,9 +6,13 @@
 }
 body {
   height: 100%;
-  background-color: #0a1112;
   min-height: 100%;
   text-rendering: optimizeSpeed;
+    background-image: url(../images/shapeBGC-01-01.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* ************************************Automaticaly set to list-style to none********************************* */
@@ -84,9 +88,7 @@ ul li {
 
 /* ************************************hero********************************* */
 .main{
-  background-image: url(../images/wavylineBGC-01.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  
   min-height: 100%;
   min-width: 100%;
 }
@@ -119,23 +121,25 @@ ul li {
 .Hero-Section__Intro h1 {
   /* font-size: clamp(7rem,4vw,1rem);*/
   font-weight: 800; 
-  font-size: 130px;
-  color: #00eb86;
+  font-family: 'Oswald', sans-serif;
+  font-size: 125px;
+  color: #252B48;
 }
 .Hero-Section__Intro p {
   /* font-size: clamp(2rem,4vw,1rem); */
   font-size: 50px;
-  color: #00eb86;
+  font-family: 'Oswald', sans-serif;
+  color: #5B9A8B;
 }
 .main h5 {
-  color: #16c494;
+  color: #5B9A8B;
 }
 .Hero-Section__Intro .primary-btn {
   border-radius: 30px;
   font-weight: bold;
   border: none;
-  background-color: #00eb86;
-  color: #161f32;
+  background-color: #252B48;
+  color: #ffffff;
 }
 /* ************************************hero end********************************* */
 /* ************************************nav********************************* */
@@ -160,7 +164,7 @@ ul li {
   transition:  0.5s ease-in-out;
 }
 .navbar{
-  background-color: #0a1112;
+  background-color: #ffffff;
   position: fixed;
   width: 100%; 
   z-index: 1;
@@ -182,7 +186,7 @@ ul li {
 /* ************************************about********************************* */
 
 .About-Section__1{
-  padding-top: 5%;
+  border: 1px solid #252B48;
   text-align: justify;
 }
 .About-Section{
@@ -203,7 +207,7 @@ ul li {
   width: 20%;
 }
 .About-Section__Content p{
-  color: #00eb86;
+  color: #252B48;
   font-size: 35px;
   width: 50%;
  
@@ -215,7 +219,7 @@ ul li {
 
 /****************************** Services *******************************/
 .main3{
-  background-image: url(../images/wavylineBGC-02-01.png);
+ 
   padding-top: 5%;
   min-height: 100%;
 
@@ -234,12 +238,12 @@ margin: auto;
 width: 45%;
 }
 .main3 .cardmain .card {
-  color: #00eb86;
+  color: #6C3428;
 }
 .main3 .cardmain .shadow {
   width: 90%;
-  background-color: transparent;
-  border: 1px solid #00eb86;
+  background-color:#DFA878;
+
 }
 .background-block{
   width: 100%; 
@@ -269,9 +273,10 @@ width: 45%;
  gap: 10px;
 }
 .BoxSlider__text h2 {
-  color: #ffffff;
+  color: #445069;
    font-size: clamp(4rem,4vw,1rem);
   font-weight: 800;
+ 
 } 
 
 .BoxSlider__text span{
@@ -280,7 +285,7 @@ width: 45%;
 }
 .BoxSlider__text p{
   width: 90%;
-  color: #ffffff;
+  color: #445069;
   margin: auto;
 
 }
@@ -298,7 +303,14 @@ width: 45%;
   letter-spacing: 1px;
   text-decoration: none;
 }
+.carousel-control-next-icon {
+  background-color: #6C3428; /* Replace with your desired color */
+}
 
+/* Change color of carousel prev arrow icon */
+.carousel-control-prev-icon {
+  background-color: #6C3428; /* Replace with your desired color */
+}
 
 /* ************************************Carousel End********************************* */
 
@@ -323,14 +335,13 @@ width: 45%;
   margin-top: -55px;
   margin-left: 3em;
   font-weight: 700;
-  color: #16c494;
+  color: #6C3428;;
 }
 
 .tools-main {
-  background-image: url(../images/wavylineBGC-04-01-01-01.png);
+
   width: 100%;
-  background-position: center;
-  background-size: cover;
+
   
 }
 .map_box p{
@@ -341,14 +352,14 @@ width: 45%;
 }
 .map_box {
   padding: 12px;
-  border: 1px solid #00eb86;
- 
+  background-color: #DFA878;
+ border: 2px solid #6C3428;
   display: flex;
   align-items: center;
 }
 .map_box p{
  margin-left: 5%;
- color: #00eb86;
+ color: #6C3428;
 }
 .map_box img{
   width: 100px;
@@ -374,12 +385,12 @@ width: 45%;
   -moz-box-shadow: 10px 9px 5px 0px rgba(0, 0, 0, 0.75);
 }
 .left {
-  background: #16c494;
+  background: #F3DEBA;
   padding: 210px 125px;
 }
 .left h2 {
   font-family: poppins;
-  color: #0a1112;
+  color: #6C3428;
   font-weight: 700;
   font-size: 48px;
   font-family: "Mukta", sans-serif;
@@ -402,11 +413,11 @@ width: 45%;
   color: #ffffff00;
 }
 .form-control {
-  border: 1px solid #16c494;
+  border: 1px solid #6C3428;
   background-color: transparent;
 }
 .right button {
-  border: 1px solid #16c494;
+  border: 1px solid #6C3428;
   border-radius: 10px;
   background: transparent;
   width: 150px;
@@ -419,7 +430,7 @@ width: 45%;
 }
 .right button:hover {
   transition: 0.5s ease;
-  background-color: #16c494;
+  background-color: #6C3428;
 }
 
 .social-links {
@@ -428,8 +439,11 @@ width: 45%;
   justify-content: center;
 
 }
+.social-links a i{
+  color: #6C3428;
+}
 .social-links .btn{
-border: 1px solid black;
+border: 1px solid #6C3428;
 
 }
 .social-links i {
@@ -440,10 +454,10 @@ border: 1px solid black;
   color: #ffffff;
 }
 .right input,textarea{
-  color: #16c494;
+  color: #6C3428;
 }
 textarea {
-  color: #16c494;
+  color: #6C3428;
     }
 .footer-content{
   margin-top: 5%;
@@ -454,7 +468,7 @@ textarea {
 .footer-content{
   justify-content: center;
   width: 100%;
-  background-color: #16c494;
+  background-color: #FAF2DA;
 
 }
              /***********************************footer******************************** */
@@ -485,13 +499,14 @@ textarea {
 .sec-heading h6 {
 	
   font-weight: 700;
-  color: #16c494;
+  color: #6C3428;
 	font-size: 80px;
 }
 .single-box{
 	padding: 50px 30px 40px;
 	border-radius: 20px;
-
+  border:  1px solid #6C3428;
+  background-color: #F3DEBA;
 }
 
 .img-area {
@@ -549,7 +564,7 @@ textarea {
 .testi-carousel .owl-dot, .clients-carousel .owl-dot, .testi-carousel-three .owl-dot {
 	width: 16px;
 	height: 16px;
-	background-color: #ddd;
+	background-color: #675D50;
 	display: inline-block;
 	margin: 0 6px;
 	text-align: center;
