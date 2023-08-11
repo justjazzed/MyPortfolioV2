@@ -407,6 +407,34 @@ ul li a{
     cursor: pointer;
   }
   
+  .hover-card .card-color:nth-child(1):hover{
+   background-color: #BEADFA;
+  }
+  .hover-card .card-color:nth-child(2):hover{
+    background-color: #ADC4CE;
+   }
+   .hover-card .card-color:nth-child(3):hover{
+    background-color: #33BBC5;
+   }
+   .hover-card .card-color:nth-child(4):hover{
+    background-color: #FEBBCC;
+   }
+   .hover-card .card-color:nth-child(5):hover{
+    background-color: #E48586;
+   }
+   .hover-card .card-color:nth-child(6):hover{
+    background-color: #CECE5A;
+   }
+   .hover-card .card-color:nth-child(7):hover{
+    background-color: #7A9D54;
+   }
+   .hover-card .card-color:nth-child(8):hover{
+    background-color: #F4D160;
+   }
+   .hover-card .card-color:nth-child(9):hover{
+    background-color: #F29727;
+   }
+  
  
   .card-body h5{
     font-size: 50px;
