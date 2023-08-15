@@ -437,6 +437,12 @@ ul li a{
    .hover-card .card-color:nth-child(10):hover{
     background-color: #E48586;
    }
+   .hover-card .card-color:nth-child(11):hover{
+    background-color: #33BBC5;
+   }
+   .hover-card .card-color:nth-child(12):hover{
+    background-color: #FEBBCC;
+   }
  
   .card-body h5{
     font-size: 50px;
