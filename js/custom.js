@@ -110,6 +110,7 @@
       document.addEventListener("DOMContentLoaded", function() {
         const textSequence = [
           "Graphics and Web Designer",
+          "Content Creator",
           "Feel free to Explore.",
           "Thank you!",
         ];
