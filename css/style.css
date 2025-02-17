@@ -734,14 +734,16 @@ textarea {
   .About-Section__Content p{
    
     font-size: clamp(1.5rem,4vw,1rem);
+    width: 100%;
   }
   .About-Section{
-  
     min-height: 30vh;
     height:auto;
-  
+   
   }
-
+  .About-Section__Content img{
+    display: none;
+  }
 }
 @media only screen and (max-width:767px) and (min-width:375px){
   .About-Section{
@@ -750,12 +752,16 @@ textarea {
     height:auto;
   }
   .About-Section__Content p{
-   
+    width: 100%;
     font-size: clamp(1rem,4vw,.1rem);
   }
+  
  .map_box{
   margin-top: 10%;
  }
+ .About-Section__Content img{
+  display: none;
+}
 }
 
 @media only screen and (max-width:500px) and (min-width:300px){
@@ -769,13 +775,16 @@ textarea {
     text-align: center;
     padding: 10px;
   }
-  .About-Section__Content img{
-    width: 45%;
-  }
+ 
   .About-Section__Content p{
   
     font-size: 25px;
     width: auto;
+  }
+}
+@media only screen and (max-width:375px){
+  .About-Section__Content img{
+    display: none;
   }
 }
 
@@ -788,7 +797,7 @@ textarea {
   .BoxSlider__text p{
     width: auto;
     font-size: clamp(4rem,4vw,1rem);
-    color: #ffffff;
+    color: #141414;
     margin: auto;
   }
   .background-block{
@@ -805,6 +814,8 @@ textarea {
 @media only screen and (max-width:991px)and (min-width:350px){
   .map_box {
     text-align: left;
+  
+    
   }
   @media only screen and (max-width:380px)and (min-width:350px){
     .map_box {
@@ -817,6 +828,22 @@ textarea {
 }
 
 /* ------------------------------------------------Carousel-------------------------------------- */
+@media only screen and (max-width:1411px) and (min-width:1065px){
+  .BoxSlider__text h2 {
+    
+    font-size: clamp(3rem,4vw,1em);
+  
+ } 
+ 
+}
+@media only screen and (max-width:1064px) and (min-width:900px){
+  .BoxSlider__text h2 {
+    
+    font-size: clamp(2.5rem,4vw,1em);
+  
+ } 
+ 
+}
 @media only screen and (max-width:992px) and (min-width:500px){
   .carousel-mobile {
     display: none;
