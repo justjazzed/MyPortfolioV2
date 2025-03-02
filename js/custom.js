@@ -91,7 +91,7 @@
         // Create a hidden <a> element
         var link = document.createElement('a');
         link.href = cvFilePath;
-        link.download = 'JasbarLegaspinaResume.pdf';
+        link.download = 'Jasbar-Alberca-Legaspina-Resume.pdf';
         link.style.display = 'none';
       
         // Append the link to the document body
