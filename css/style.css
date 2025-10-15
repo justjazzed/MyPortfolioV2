@@ -7,12 +7,7 @@ body {
 html{
   scroll-behavior: smooth;
 }
-.scroll-container {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
-  scroll-behavior: smooth;
-}
+
 
 /* Custom Navbar */
 .custom-navbar {
@@ -494,49 +489,204 @@ html {
 }
 
 /* Portfolio Section */
-.portfolio-item {
+.portfolio-section {
+  background: linear-gradient(180deg, var(--bs-dark) 0%, #0c0c0e 100%);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.portfolio-title {
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.title-line {
+  width: 280px;
+  height: 3px;
+  background: linear-gradient(90deg, #a996ff, #6be7d8);
+  border-radius: 20px;
+  opacity: 0.8;
+  transition: width 0.4s ease;
+  margin: 0 auto 1rem auto;
+}
+.portfolio-section:hover .title-line {
+  width: 330px;
+}
+.portfolio-subtitle {
+  color: #d1d1d1;
+  font-size: 1.1rem;
+  font-style: italic;
+  opacity: 0.9;
+  max-width: 500px;
+  margin: 0 auto 3rem auto;
+  line-height: 1.6;
+}
+
+/* Portfolio Item Headings */
+.portfolio-description h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #a996ff, #6be7d8);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+.portfolio-description h3:hover {
+  transform: translateY(-3px);
+}
+
+/* Portfolio Descriptions */
+.portfolio-description p {
+  color: #ccc;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 480px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.portfolio-description p:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Featured Image */
+.featured-image-container {
+  overflow: hidden;
+  border-radius: 20px;
+  transition: transform 0.4s ease;
+}
+.featured-image-container:hover { transform: scale(1.03); }
+
+/* Example Images */
+.example-img {
+  width: 30%;
+  transition: all 0.3s ease;
+}
+.example-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+/* Tablet Carousel */
+.tablet-carousel-container {
+  position: relative;
+  align-items: center;
+}
+.tablet-carousel {
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+}
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 10px; /* <- add your desired gap */
+}
+
+.carousel-track img {
+  min-width: calc(50% - 5px); /* subtract half the gap to keep layout consistent */
+  flex-shrink: 0;
+}
+.carousel-btn {
+  background: rgba(255,255,255,0.15);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.carousel-btn:hover { background: rgba(255,255,255,0.3); }
+.prev-btn { margin-right: 10px; }
+.next-btn { margin-left: 10px; }
+
+/* See More Buttons */
+.see-more-btn {
+  background: linear-gradient(90deg, #a996ff, #6be7d8);
+  border: none;
+  color: #111;
+  font-weight: 700;
+  border-radius: 50px;
+  transition: all 0.4s ease;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
-  cursor: pointer;
+  margin: 1rem 0.5rem;
 }
-
-.portfolio-item img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  transition: transform 0.5s ease;
+.see-more-btn {
+  width: 250px; /* fixed width for both buttons */
+  text-align: center;
+  margin: 1rem 10px;
+  display: inline-block;
 }
-
-/* Hover overlay */
-.portfolio-overlay {
+.see-more-btn::before {
+  content: "";
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: -75%;
+  width: 50%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(255, 255, 255, 0.3);
+  transform: skewX(-20deg);
+  transition: left 0.5s ease;
+}
+.see-more-btn:hover::before { left: 125%; }
+.see-more-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(160, 150, 255, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .portfolio-title { font-size: 2rem; }
+  .title-line { width: 160px; }
+}
+/* Remove any gap between graphics and photography sections */
+#photography .tablet-carousel .carousel-track {
+  margin-left: 10%; /* shift track slightly to the right for stagger effect */
+}
+
+
+/* Optional: reduce margin between sections */
+.portfolio-section + .portfolio-section {
+  margin-top: 0;
+}
+.example-images,
+.tablet-carousel .carousel-track {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.4s ease;
+  gap: 1rem;
 }
 
-.portfolio-overlay span {
-  color: #fff;
-  font-weight: 500;
-  font-size: 1.2rem;
-  letter-spacing: 1px;
+.example-images img,
+.tablet-carousel .carousel-track img {
+  flex: 1 1 0;           /* equal space for all images */
+  max-width: 100%;       /* never exceed container */
+  aspect-ratio: 1 / 1;   /* square aspect ratio */
+  object-fit: cover;      /* fill container without distortion */
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.portfolio-item:hover img {
-  transform: scale(1.08);
-}
-
-.portfolio-item:hover .portfolio-overlay {
-  opacity: 1;
-}
+/* Hover effect */
+.example-images img:hover,
+.tablet-carousel .carousel-track img:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(160,150,255,0.3);}
 
 /* Services */
 .service-card img {
