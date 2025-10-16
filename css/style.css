@@ -163,10 +163,7 @@ html{
   padding: 13px 32px;
   font-size: 1rem;
 }
-.hero-buttons .btn {
-  min-width: 180px; /* optional: same width for both buttons */
-  text-align: center;
-}
+
 .hero-buttons .btn-outline-light {
   border-radius: 30px;
   padding: 13px 32px;
@@ -404,17 +401,14 @@ html {
   overflow: hidden;
   border-radius: 15px;
   display: inline-block;
-  width: 100%;
-  max-width: 400px; /* adjust max size for desktop */
-  margin: 0 auto;   /* center on mobile */
 }
 
 .about-img {
-  width: 100%;        /* scale width to wrapper */
-  height: auto;       /* maintain original aspect ratio */
-  object-fit: cover;  /* crop edges if necessary but keep proportions */
   border-radius: 15px;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .about-img:hover {
