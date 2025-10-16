@@ -174,3 +174,24 @@ document.addEventListener("scroll", () => {
     }
   });
 });
+
+//**Testimonials */
+$(document).ready(function(){
+  $(".testimonials-carousel").owlCarousel({
+    loop: true,
+    center: true,
+    margin: 40,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    autoplayHoverPause: true,
+    smartSpeed: 700,
+    responsiveClass: true,
+    nav: false,
+    dots: true,
+    responsive:{
+      0:{ items:1, stagePadding:40 },
+      768:{ items:1.3, stagePadding:100 },
+      1200:{ items:1.6, stagePadding:150 }
+    }
+  });
+});

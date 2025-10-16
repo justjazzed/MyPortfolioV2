@@ -933,6 +933,116 @@ html {
     font-size: 0.95rem;
   }
 }
+/* Testimonials */
+.testimonials-section {
+  background: transparent;
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #00ffd5;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.testimonial-card {
+  background: rgba(20, 25, 40, 0.85);
+  border-radius: 20px;
+  padding: 35px;
+  text-align: left;
+  margin: 20px;
+  box-shadow: 0 0 25px rgba(0, 255, 213, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  backdrop-filter: blur(8px);
+  max-width: 500px;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 255, 213, 0.3);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.profile img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #00ffd5;
+}
+
+.company {
+  color: #00ffd5;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+.testimonial-text {
+  color: #d6dde8;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Owl Carousel adjustments */
+.owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+}
+
+.owl-carousel .owl-item {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.owl-carousel .center .testimonial-card {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px rgba(0, 255, 213, 0.3);
+}
+
+.owl-nav button {
+  color: #00ffd5 !important;
+  font-size: 2rem !important;
+  transition: 0.3s;
+}
+
+.owl-nav button:hover {
+  color: #fff !important;
+  transform: scale(1.2);
+}
+
+.owl-dots .owl-dot span {
+  background: #00ffd5 !important;
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+.owl-dots .owl-dot.active span {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonial-card {
+    padding: 25px;
+  }
+  .profile img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
 
 
 /* Contact Section */
