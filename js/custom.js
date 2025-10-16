@@ -84,27 +84,30 @@
 
 
 
-      function DownloadCV() {
-        // Path to your CV file
-        var cvFilePath = './images/Jasbar-Alberca-Legaspina-Resume.pdf';
-      
-        // Create a hidden <a> element
-        var link = document.createElement('a');
-        link.href = cvFilePath;
-        link.download = 'Jasbar-Alberca-Legaspina-Resume.pdf';
-        link.style.display = 'none';
-      
-        // Append the link to the document body
-        document.body.appendChild(link);
-      
-        // Trigger the click event
-        link.click();
-      
-        // Clean up
-        document.body.removeChild(link);
-      }
+        //**************Download CV****************//
+      document.addEventListener('DOMContentLoaded', function() {
+  const downloadBtn = document.getElementById('downloadCvBtn');
 
-     
+  downloadBtn.addEventListener('click', function(e) {
+    e.preventDefault(); // Prevent default anchor behavior
+
+    // Path to your CV file relative to index.html
+    const fileUrl = 'images/Jasbar-Alberca-Legaspina-Resume.pdf';
+    const fileName = 'Jasbar_Legaspina_CV.pdf'; // File name for download
+
+    // Create temporary link and trigger download
+    const a = document.createElement('a');
+    a.href = fileUrl;
+    a.download = fileName;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  });
+});
+
+        //********Download CV*******************/
+
+
 
       //**********************LOOPING TEXT*********** */
       document.addEventListener("DOMContentLoaded", function() {

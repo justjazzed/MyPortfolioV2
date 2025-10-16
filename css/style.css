@@ -163,7 +163,10 @@ html{
   padding: 13px 32px;
   font-size: 1rem;
 }
-
+.hero-buttons .btn {
+  min-width: 180px; /* optional: same width for both buttons */
+  text-align: center;
+}
 .hero-buttons .btn-outline-light {
   border-radius: 30px;
   padding: 13px 32px;
