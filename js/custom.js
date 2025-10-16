@@ -85,25 +85,7 @@
 
 
         //**************Download CV****************//
-      document.addEventListener('DOMContentLoaded', function() {
-  const downloadBtn = document.getElementById('downloadCvBtn');
-
-  downloadBtn.addEventListener('click', function(e) {
-    e.preventDefault(); // Prevent default anchor behavior
-
-    // Path to your CV file relative to index.html
-    const fileUrl = 'images/Jasbar-Alberca-Legaspina-Resume.pdf';
-    const fileName = 'Jasbar_Legaspina_CV.pdf'; // File name for download
-
-    // Create temporary link and trigger download
-    const a = document.createElement('a');
-    a.href = fileUrl;
-    a.download = fileName;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-  });
-});
+      
 
         //********Download CV*******************/
 
