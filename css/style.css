@@ -389,6 +389,7 @@ html {
     text-align: center;
     flex-direction: column;
     padding: 80px 0;
+    top: 50px;
   }
 
   .hero-text {
@@ -424,6 +425,7 @@ html {
 @media (max-width: 576px) {
   .hero {
     padding: 70px 0;
+    top: 50px;
   }
 
   .hero-text h1 {
@@ -584,6 +586,7 @@ html {
 
   .about-img {
     max-width: 100%;
+  
   }
 }
 
