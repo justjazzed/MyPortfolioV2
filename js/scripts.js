@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Path to your CV file relative to index.html
     const fileUrl = 'Jasbar-Alberca-Legaspina-Resume.pdf';
-    const fileName = 'Jasbar_Legaspina_CV.pdf'; // File name for download
+    const fileName = 'Jasbar_Legaspina_Resume.pdf'; // File name for download
 
     // Create temporary link and trigger download
     const a = document.createElement('a');
