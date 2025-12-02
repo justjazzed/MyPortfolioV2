@@ -1,0 +1,275 @@
+:root {
+  --bg: #0f0f0f;
+  --text: #fafafa;
+  --accent: #7dd3fc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0,0,0,0.6);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(8px);
+  z-index: 10;
+}
+
+nav a {
+  color: var(--text);
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color .3s ease;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* Hero */
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+/* Section */
+.section {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid var(--accent);
+  padding-left: .6rem;
+  display: inline-block;
+  text-align: left;
+}
+
+/* Gallery Grid */
+/* Gallery Grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 250px); /* 4 fixed-width squares */
+  gap: 1rem;
+  justify-content: center; /* center the grid */
+}
+
+/* Square Items */
+.square {
+  position: relative;
+  width: 250px; /* fixed width */
+  height: 250px; /* fixed height = perfect square */
+  overflow: hidden;
+  border-radius: 10px;
+  background: #000;
+}
+
+.square img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fill square without distortion */
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.square img:hover {
+  transform: scale(1.05);
+}
+
+/* Info under square */
+.item .info {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.item .info h3 {
+  color: var(--accent);
+  margin-bottom: .3rem;
+}
+
+.item .info p {
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+/* Hover Overlay */
+.item .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text);
+  font-size: 1.1rem;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* <--- important so clicks reach img */
+}
+
+.item:hover .overlay {
+  opacity: 1;
+}
+
+.item:hover .overlay {
+  opacity: 1;
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.9);
+  z-index: 9999;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: .9rem;
+  color: #bbb;
+  border-top: 1px solid #222;
+  margin-top: 2rem;
+}
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.9);
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.lightbox.active {
+  display: flex;
+}
+/* About Section */
+.about-section {
+  background: rgba(125,211,252,0.05); /* subtle accent background */
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 2rem;
+}
+
+.about-content {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-card {
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card h3 {
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.about-card p {
+  font-size: 0.95rem;
+  color: #ddd;
+  line-height: 1.4;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(125,211,252,0.3);
+}
+
+/* Responsive */
+@media(max-width: 1024px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-card {
+    max-width: 80%;
+    margin-bottom: 1rem;
+  }
+}
+
+
+
+/* Responsive */
+@media(max-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .square {
+    width: 95%;
+    padding-top: 95%;
+  }
+}
+
+@media(max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  .square {
+    width: 100%;
+    padding-top: 100%;
+  }
+}
