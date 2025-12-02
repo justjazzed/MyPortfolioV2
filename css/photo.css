@@ -9,6 +9,59 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* --- Full-Page Dynamic Background --- */
+.global-bg {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at top left, #111936, #05060b);
+  overflow: hidden;
+  z-index: -1; /* behind everything */
+}
+
+/* --- Orbs --- */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.6;
+  animation: floatDrift 20s ease-in-out infinite;
+  will-change: transform;
+}
+
+.orb1 {
+  width: 350px;
+  height: 350px;
+  background: #00ffd5;
+  top: 15%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.orb2 {
+  width: 450px;
+  height: 450px;
+  background: #5ac8fa;
+  bottom: 10%;
+  right: 10%;
+  animation-delay: 5s;
+}
+
+.orb3 {
+  width: 280px;
+  height: 280px;
+  background: #0077ff;
+  top: 60%;
+  left: 55%;
+  animation-delay: 8s;
+}
+
+@keyframes floatDrift {
+  0%   { transform: translate(0, 0) scale(1); }
+  25%  { transform: translate(50px, -40px) scale(1.1); }
+  50%  { transform: translate(-40px, 40px) scale(0.95); }
+  75%  { transform: translate(40px, 50px) scale(1.05); }
+  100% { transform: translate(0, 0) scale(1); }
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -195,47 +248,92 @@ footer {
 }
 /* About Section */
 .about-section {
-  background: rgba(125,211,252,0.05); /* subtle accent background */
-  padding: 4rem 2rem;
+  background: linear-gradient(135deg, rgba(15,15,15,0.85) 0%, rgba(25,25,25,0.85) 100%);
+  padding: 5rem 2rem;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(4px); /* subtle blur for blending */
 }
 
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/dark-mosaic.png') repeat;
+  opacity: 0.1; /* very subtle texture */
+  z-index: 0;
+}
+
+
 .about-section h2 {
-  font-size: 2rem;
-  color: var(--accent);
-  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #7dd3fc;
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.about-section h2::after {
+  content: '';
+  width: 80px;
+  height: 3px;
+  background: #7dd3fc;
+  display: block;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
 }
 
 .about-content {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .about-card {
-  background: #1a1a1a;
-  border-radius: 10px;
-  padding: 1.5rem;
-  max-width: 300px;
+  background: linear-gradient(145deg, #1a1a1a, #111111);
+  border-radius: 15px;
+  padding: 2rem;
+  width: 280px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: 1px solid rgba(125,211,252,0.2);
+  backdrop-filter: blur(6px);
+  position: relative;
+}
+
+.about-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #7dd3fc;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
 }
 
 .about-card h3 {
-  color: var(--accent);
-  margin-bottom: 0.5rem;
+  color: #7dd3fc;
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
 }
 
 .about-card p {
   font-size: 0.95rem;
-  color: #ddd;
-  line-height: 1.4;
+  color: #ccc;
+  line-height: 1.6;
 }
 
 .about-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(125,211,252,0.3);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(125,211,252,0.4);
+  border: 1px solid rgba(125,211,252,0.5);
 }
 /* Sub-display square carousel for tablet/mobile */
 .owl-carousel .item {
@@ -317,4 +415,16 @@ display: none;
     width: 100%;
     padding-top: 100%;
   }
+}
+/* Full-screen particles background */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;        /* behind content */
+  background: #0f0f0f; /* dark base */
+  mix-blend-mode: overlay; /* optional subtle blending */
+  pointer-events: none; /* so clicks pass through */
 }
