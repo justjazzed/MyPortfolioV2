@@ -237,6 +237,51 @@ footer {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(125,211,252,0.3);
 }
+/* Sub-display square carousel for tablet/mobile */
+.owl-carousel .item {
+  width: 250px;       /* let Owl control width */
+  height: 250px;     
+  overflow: hidden;
+  border-radius: 8px;
+}
+.owl-carousel .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Center carousel and limit max width */
+.owl-carousel {
+  margin-top: 2rem;
+  max-width: auto;
+  margin-left: auto;
+  margin-right: auto;
+display: none;
+ justify-content: center;
+}
+
+/* Smaller nav buttons (optional) */
+.owl-nav button {
+  font-size: 0.7rem;
+  padding: 3px 4px;
+}
+.owl-stage-outer {
+  padding-left: 35px;
+  padding-right: 0px;
+}
+
+/* Hide carousel on desktop */
+
+@media (min-width: 601px) and (max-width: 992px) {
+  .owl-carousel {
+    display: flex !important;
+    margin-top: 1rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 
 /* Responsive */
 @media(max-width: 1024px) {
