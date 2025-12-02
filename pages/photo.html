@@ -25,14 +25,16 @@
   <div class="orb orb2"></div>
   <div class="orb orb3"></div>
 </div>
-<header>
+<header id="navbar">
   <h2>My Photography</h2>
   <nav>
     <a href="#portraits">Portraits</a>
     <a href="#products">Products</a>
     <a href="#events">Events</a>
+    <a href="#about-works">About</a>
   </nav>
 </header>
+
 
 <section class="hero">
   <h1>Curated Photography Works</h1>
@@ -277,6 +279,30 @@ $(document).ready(function(){
 
 
 
+</script>
+<script>let lastScrollTop = 0;
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", function() {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop) {
+    // Scrolling down → hide navbar
+    navbar.style.top = "-100px";
+  } else {
+    // Scrolling up → show navbar
+    navbar.style.top = "0";
+  }
+
+  // Optional: add shadow after scrolling 50px
+  if (scrollTop > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+});
 </script>
 
 </body>
