@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     e.preventDefault(); // Prevent default anchor behavior
 
     // Path to your CV file relative to index.html
-    const fileUrl = 'images/Jasbar-Legaspina-Resume.pdf';
+    const fileUrl = 'images/Jasbar-ALberca-Legaspina.pdf';
     const fileName = 'Jasbar_Legaspina_Resume.pdf'; // File name for download
 
     // Create temporary link and trigger download
